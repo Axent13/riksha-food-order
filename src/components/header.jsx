@@ -1,7 +1,12 @@
 import React from 'react';
+import Logo from './logo';
 
 const Header = () => {
-  return <h2>Header</h2>;
+  return (
+    <header>
+      <Logo />
+    </header>
+  );
 };
 
 export default Header;
