@@ -1,7 +1,12 @@
 import React from 'react';
+import Mainpage from './layouts/mainpage';
 
-function App() {
-  return <div>App</div>;
-}
+const App = () => {
+  return (
+    <>
+      <Mainpage />
+    </>
+  );
+};
 
 export default App;
