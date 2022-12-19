@@ -19,5 +19,6 @@ module.exports = {
     ],
     quotes: ['error', 'single', { allowTemplateLiterals: true }],
     'comma-dangle': ['off'],
+    'no-unused-vars': ['warn'],
   },
 };

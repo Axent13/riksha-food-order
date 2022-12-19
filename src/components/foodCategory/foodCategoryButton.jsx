@@ -1,11 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const FoodCategoryButton = ({ text, iconUrl }) => {
-  console.log(iconUrl);
+const FoodCategoryButton = ({ text, image }) => {
   return (
     <button>
-      <img src={iconUrl} alt={text} />
+      <img src={image} alt={text} />
       {text}
     </button>
   );
@@ -13,7 +12,7 @@ const FoodCategoryButton = ({ text, iconUrl }) => {
 
 FoodCategoryButton.propTypes = {
   text: PropTypes.string.isRequired,
-  iconUrl: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
 };
 
 export default FoodCategoryButton;

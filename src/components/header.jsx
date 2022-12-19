@@ -1,10 +1,10 @@
 import React from 'react';
 import Cart from './cart';
+import FoodCategoryButtonList from './foodCategory/foodCategoryButtonList';
 import Logo from './logo';
 import Navbar from './navbar';
 import PhoneNumber from './phoneNumber';
 import Profile from './profile';
-import FoodCategoryButtonList from './foodCategoryButtonList';
 
 const Header = () => {
   return (
