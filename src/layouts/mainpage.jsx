@@ -4,6 +4,7 @@ import Footer from '../components/footer';
 import PromoSlider from '../components/promoSlider';
 
 import './mainpage.scss';
+import FeaturesList from '../components/Features/featuresList';
 
 const Mainpage = () => {
   return (
@@ -12,6 +13,7 @@ const Mainpage = () => {
       {/* Mainpage content */}
       <div className='mainpage__promo-slider'>
         <PromoSlider />
+        <FeaturesList />
       </div>
       <Footer />
     </>
