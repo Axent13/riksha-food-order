@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const SectionHeader = ({ text, subText, leftTopImg, rightCenterImg }) => {
   return (
-    <div>
+    <div className='section-header'>
       {leftTopImg && <img src={leftTopImg} />}
       <h2>
         {text} {subText && <span>{subText}</span>}
