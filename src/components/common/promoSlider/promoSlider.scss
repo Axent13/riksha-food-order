@@ -1,0 +1,27 @@
+.promo-slider {
+  position: relative;
+
+  &__text {
+    position: absolute;
+    top: 7.313rem;
+    left: 3.75rem;
+    max-width: 31.25rem;
+  }
+
+  &__text-main {
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+
+  &__text-accented {
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #E07153;
+  }
+
+  &__text-addition {
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin-top: 0.6rem;
+  }
+}

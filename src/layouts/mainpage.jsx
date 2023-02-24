@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../components/ui/header/header';
 import Footer from '../components/footer';
-import PromoSlider from '../components/promoSlider';
+import PromoSlider from '../components/common/promoSlider/promoSlider';
 
 import './mainpage.scss';
 import FeaturesList from '../components/Features/featuresList';
