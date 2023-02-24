@@ -4,7 +4,6 @@ import Footer from '../components/footer';
 import PromoSlider from '../components/common/promoSlider/promoSlider';
 
 import './mainpage.scss';
-import FeaturesList from '../components/Features/featuresList';
 import topRollImg from '../assets/top-roll.png';
 import hugRollsImg from '../assets/hug-rolls.png';
 import happyRollImg from '../assets/happy-roll.png';
@@ -12,6 +11,7 @@ import tableRollImg from '../assets/table-roll.png';
 import messageRollImg from '../assets/message-roll.png';
 import SectionHeader from '../components/sectionHeader';
 import TopPositions from '../components/ui/topPositions/topPositions';
+import FeaturesList from '../components/common/features/featuresList';
 
 const Mainpage = () => {
   return (
@@ -21,7 +21,9 @@ const Mainpage = () => {
       <div className='mainpage__promo-slider'>
         <PromoSlider />
       </div>
-      <FeaturesList />
+      <div className='mainpage__features-list'>
+        <FeaturesList />
+      </div>
       <SectionHeader
         text='Топ позиции'
         subText='Новинки'

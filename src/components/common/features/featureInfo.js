@@ -1,11 +1,11 @@
-import freeImg from '../../assets/features/free.png';
-import freeIcon from '../../assets/features/free-icon.png';
-import deliverImg from '../../assets/features/deliver.png';
-import deliverIcon from '../../assets/features/deliver-icon.png';
-import giftImg from '../../assets/features/gift.png';
-import giftIcon from '../../assets/features/gift-icon.png';
-import freshImg from '../../assets/features/fresh.png';
-import freshIcon from '../../assets/features/fresh-icon.png';
+import freeImg from '../../../assets/features/free.png';
+import freeIcon from '../../../assets/features/free-icon.png';
+import deliverImg from '../../../assets/features/deliver.png';
+import deliverIcon from '../../../assets/features/deliver-icon.png';
+import giftImg from '../../../assets/features/gift.png';
+import giftIcon from '../../../assets/features/gift-icon.png';
+import freshImg from '../../../assets/features/fresh.png';
+import freshIcon from '../../../assets/features/fresh-icon.png';
 
 export const featureInfo = [
   {
