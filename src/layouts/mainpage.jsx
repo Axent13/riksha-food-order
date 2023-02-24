@@ -9,7 +9,7 @@ import hugRollsImg from '../assets/hug-rolls.png';
 import happyRollImg from '../assets/happy-roll.png';
 import tableRollImg from '../assets/table-roll.png';
 import messageRollImg from '../assets/message-roll.png';
-import SectionHeader from '../components/sectionHeader';
+import SectionHeader from '../components/common/sectionHeader/sectionHeader';
 import TopPositions from '../components/ui/topPositions/topPositions';
 import FeaturesList from '../components/common/features/featuresList';
 
@@ -24,12 +24,14 @@ const Mainpage = () => {
       <div className='mainpage__features-list'>
         <FeaturesList />
       </div>
-      <SectionHeader
-        text='Топ позиции'
-        subText='Новинки'
-        leftTopImg={topRollImg}
-      />
-      <TopPositions />
+      <div className='mainpage__top-positions'>
+        <SectionHeader
+          text='Топ позиции'
+          subText='Новинки'
+          leftTopImg={topRollImg}
+        />
+        <TopPositions />
+      </div>
       <SectionHeader text='Комбо меню' rightCenterImg={hugRollsImg} />
       <SectionHeader text='Акции' rightCenterImg={happyRollImg} />
       <SectionHeader text='Категории' rightCenterImg={tableRollImg} />
