@@ -1,0 +1,22 @@
+.food-category-button {
+  width: 4rem;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 5.188rem;
+  background: none;
+  padding: 0 3rem;
+  cursor: pointer;
+
+  &:hover {
+    background: #cfcfcf;
+  }
+  
+  &__text {
+    font-family: 'TT Interfaces';
+    font-weight: 500;
+    font-size: 1rem;
+  }
+}

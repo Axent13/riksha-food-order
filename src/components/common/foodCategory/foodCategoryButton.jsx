@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './foodCategoryButton.scss';
 
 const FoodCategoryButton = ({ text, image }) => {
   return (
-    <button>
+    <button className='food-category-button'>
       <img src={image} alt={text} />
-      {text}
+      <span className='food-category-button__text'>{text}</span>
     </button>
   );
 };
