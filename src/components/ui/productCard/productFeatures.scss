@@ -1,0 +1,21 @@
+.product-features {
+  &__feature {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    font-weight: 800;
+    color: white;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__top {
+    background-color: #A1DCDC;
+  }
+
+  &__new {
+    background-color: #6DD8B1;
+  }
+}

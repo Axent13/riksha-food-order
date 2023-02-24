@@ -1,5 +1,6 @@
 import React from 'react';
 import ProductCard from '../productCard/productCard';
+import './topPositions.scss';
 
 import rollPhiladelphiaImg from '../../../assets/productsImages/roll-philadelphia.png';
 import rollCreamyShrimpImg from '../../../assets/productsImages/roll-creamy-shrimp.png';
@@ -58,9 +59,13 @@ const products = [
 ];
 
 const TopPositions = () => {
-  return products.map((product) => (
-    <ProductCard key={product._id} product={product} />
-  ));
+  return (
+    <div className='top-positions'>
+      {products.map((product) => (
+        <ProductCard key={product._id} product={product} />
+      ))}
+    </div>
+  );
 };
 
 export default TopPositions;
