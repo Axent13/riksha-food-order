@@ -1,5 +1,6 @@
 .promo-slider {
   position: relative;
+  min-height: 33rem;
 
   &__text {
     position: absolute;
@@ -23,5 +24,11 @@
     font-weight: 500;
     font-size: 1.25rem;
     margin-top: 0.6rem;
+  }
+
+  &__more-button {
+    position: absolute;
+    bottom: 1rem;
+    left: 3.75rem;
   }
 }
