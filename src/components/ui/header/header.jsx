@@ -10,17 +10,19 @@ import './header.scss';
 const Header = () => {
   return (
     <header className='header'>
-      <div>
-        <Logo />
-      </div>
-      <div>
+      <div className='header__top-part-and-logo-wrapper'>
+        <div className='header__logo'>
+          <Logo />
+        </div>
         <div className='header__up-part'>
           <Navbar />
           <PhoneNumber />
           <Cart />
           <Profile />
         </div>
-        <div className='header__bottom-part'>
+      </div>
+      <div className='header__bottom-part'>
+        <div className='header__bottom-part-wrapper'>
           <FoodCategoryButtonList />
         </div>
       </div>

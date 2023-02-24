@@ -1,9 +1,15 @@
 .phone-number {
+  margin-left: 5.55rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
   &__link {
     color: #1b1b1b;
     text-decoration: none;
     font-weight: 500;
     font-size: 1rem;
+    padding-left: 0.5rem;
   }
 
   &__working-time {
