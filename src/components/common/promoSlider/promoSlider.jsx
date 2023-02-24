@@ -1,6 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
 import './promoSlider.scss';
+import PropTypes from 'prop-types';
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -9,12 +10,25 @@ import promoSliderFirstImgSrc from '../../../assets/promo-slider-1.jpg';
 import promoSliderSecondImgSrc from '../../../assets/promo-slider-2.jpg';
 import Button from '../button/button';
 
+const SliderArrow = ({ isLeft = false, onClick }) => {
+  return (
+    <div
+      className={
+        'promo-slider__arrow' + (isLeft ? ' promo-slider__arrow_left' : '')
+      }
+      onClick={onClick}
+    ></div>
+  );
+};
+
 const PromoSlider = () => {
   const settings = {
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    nextArrow: <SliderArrow />,
+    prevArrow: <SliderArrow isLeft={true} />,
   };
 
   const firstButtonClick = () => {
@@ -59,6 +73,11 @@ const PromoSlider = () => {
       </div>
     </Slider>
   );
+};
+
+SliderArrow.propTypes = {
+  isLeft: PropTypes.bool,
+  onClick: PropTypes.func,
 };
 
 export default PromoSlider;

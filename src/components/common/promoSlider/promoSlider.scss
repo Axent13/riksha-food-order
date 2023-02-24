@@ -31,4 +31,29 @@
     bottom: 1rem;
     left: 3.75rem;
   }
+
+  &__arrow {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background: url('/assets/right-button-arrow.png') center no-repeat white;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+    position: absolute;
+    right: -0.6rem;
+    z-index: 1;
+    top: 10.5rem;
+    cursor: pointer;
+
+    &_left {
+      right: initial;
+      left: -2.4rem;
+      transform: rotate(180deg);
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    
+  }
 }
