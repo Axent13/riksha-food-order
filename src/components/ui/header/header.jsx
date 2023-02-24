@@ -1,5 +1,5 @@
 import React from 'react';
-import Cart from '../../cart';
+import Cart from '../../common/cart/cart';
 import FoodCategoryButtonList from '../../foodCategory/foodCategoryButtonList';
 import Logo from '../../logo';
 import Navbar from '../../common/navbar/navbar';
