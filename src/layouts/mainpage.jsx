@@ -11,6 +11,7 @@ import tableRollImg from '../assets/table-roll.png';
 import messageRollImg from '../assets/message-roll.png';
 import SectionHeader from '../components/common/sectionHeader/sectionHeader';
 import TopPositions from '../components/ui/topPositions/topPositions';
+import ComboMenu from '../components/ui/comboMenu/comboMenu';
 import FeaturesList from '../components/common/features/featuresList';
 
 const Mainpage = () => {
@@ -32,7 +33,10 @@ const Mainpage = () => {
         />
         <TopPositions />
       </div>
-      <SectionHeader text='Комбо меню' rightCenterImg={hugRollsImg} />
+      <div className='mainpage__combo-menu'>
+        <SectionHeader text='Комбо меню' rightCenterImg={hugRollsImg} />
+        <ComboMenu />
+      </div>
       <SectionHeader text='Акции' rightCenterImg={happyRollImg} />
       <SectionHeader text='Категории' rightCenterImg={tableRollImg} />
       <SectionHeader text='О компании' rightCenterImg={messageRollImg} />

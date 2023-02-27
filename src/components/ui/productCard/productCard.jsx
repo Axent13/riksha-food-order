@@ -33,8 +33,8 @@ const ProductCard = ({ product }) => {
         </div>
         <div className='product-card__price-and-button'>
           <div className='product-card__prices'>
-            <p className='product-card__old-price'>545 ₽</p>
-            <p className='product-card__new-price'>499 ₽</p>
+            <p className='product-card__old-price'>{product.oldPrice}</p>
+            <p className='product-card__new-price'>{product.newPrice}</p>
           </div>
           <div className='product-card__order-button'>
             <Button onClickFunction={addToCart} text='Заказать' />
