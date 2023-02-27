@@ -13,6 +13,7 @@ import SectionHeader from '../components/common/sectionHeader/sectionHeader';
 import TopPositions from '../components/ui/topPositions/topPositions';
 import ComboMenu from '../components/ui/comboMenu/comboMenu';
 import FeaturesList from '../components/common/features/featuresList';
+import Promos from '../components/ui/promos/promos';
 
 const Mainpage = () => {
   return (
@@ -37,7 +38,10 @@ const Mainpage = () => {
         <SectionHeader text='Комбо меню' rightCenterImg={hugRollsImg} />
         <ComboMenu />
       </div>
-      <SectionHeader text='Акции' rightCenterImg={happyRollImg} />
+      <div className='mainpage__promos'>
+        <SectionHeader text='Акции' rightCenterImg={happyRollImg} />
+        <Promos />
+      </div>
       <SectionHeader text='Категории' rightCenterImg={tableRollImg} />
       <SectionHeader text='О компании' rightCenterImg={messageRollImg} />
       <Footer />
