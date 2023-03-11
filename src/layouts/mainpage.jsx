@@ -22,36 +22,37 @@ const Mainpage = () => {
     <>
       <Header />
       {/* Mainpage content */}
-      <div className='mainpage__promo-slider'>
+      <section className='mainpage__promo-slider'>
         <PromoSlider />
-      </div>
-      <div className='mainpage__features-list'>
+      </section>
+      <section className='mainpage__features-list'>
         <FeaturesList />
-      </div>
-      <div className='mainpage__top-positions'>
+      </section>
+      <section className='mainpage__top-positions'>
         <SectionHeader
           text='Топ позиции'
           subText='Новинки'
           leftTopImg={topRollImg}
         />
         <TopPositions />
-      </div>
-      <div className='mainpage__combo-menu'>
+      </section>
+      <section className='mainpage__combo-menu'>
         <SectionHeader text='Комбо меню' rightCenterImg={hugRollsImg} />
         <ComboMenu />
-      </div>
-      <div className='mainpage__promos'>
+      </section>
+      <section className='mainpage__promos'>
         <SectionHeader text='Акции' rightCenterImg={happyRollImg} />
         <Promos />
-      </div>
-      <div className='mainpage__categories'>
+      </section>
+      <section className='mainpage__categories'>
         <SectionHeader text='Категории' rightCenterImg={tableRollImg} />
         <Categories />
-      </div>
-      <div className='mainpage__about-company'>
+      </section>
+      <section className='mainpage__about-company'>
         <SectionHeader text='О компании' rightCenterImg={messageRollImg} />
         <AboutCompany />
-      </div>
+      </section>
+
       <Footer />
     </>
   );
