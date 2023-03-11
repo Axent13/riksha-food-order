@@ -1,0 +1,37 @@
+.instagram-block {
+  &__header {
+    display: flex;
+    align-items: center;
+  }
+
+  &__text {
+    max-width: 28rem;
+    margin-right: auto;
+    font-family: 'TT Interfaces';
+    font-weight: 600;
+    font-size: 2.5rem;
+
+    &_accented {
+      color: #E07153;
+    }
+  }
+
+  &__images {
+    margin-top: 4.25rem;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". . . high"
+      "long long . high"; 
+  }
+
+  &__image-4 {
+    grid-area: long;
+  }
+
+  &__image-6 {
+    grid-area: high;
+  }
+}

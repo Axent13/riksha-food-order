@@ -16,6 +16,7 @@ import FeaturesList from '../components/common/features/featuresList';
 import Promos from '../components/ui/promos/promos';
 import Categories from '../components/ui/categories/categories';
 import AboutCompany from '../components/ui/aboutCompany/aboutCompany';
+import InstagramBlock from '../components/ui/instagramBlock/instagramBlock';
 
 const Mainpage = () => {
   return (
@@ -52,7 +53,9 @@ const Mainpage = () => {
         <SectionHeader text='О компании' rightCenterImg={messageRollImg} />
         <AboutCompany />
       </section>
-
+      <section className='mainpage__instagram'>
+        <InstagramBlock />
+      </section>
       <Footer />
     </>
   );

@@ -13,11 +13,20 @@ const Button = ({
 }) => {
   return (
     <button
-      className={'button' + (isRounded ? ' button_rounded' : '')}
+      className={
+        'button' +
+        (isRounded ? ' button_rounded' : '') +
+        (hasInstagramIcon ? ' button_with-icon' : '')
+      }
       onClick={() => onClickFunction()}
     >
       {isUp && <img className='button__arrow' src={upArrow} alt='Arrow icon' />}
-      <p className='button__content'>
+      <p
+        className={
+          'button__content' +
+          (hasInstagramIcon ? ' button__content_with-icon' : '')
+        }
+      >
         {hasInstagramIcon && (
           <img
             className='button__instagam'

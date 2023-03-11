@@ -17,5 +17,11 @@
 
   &__image {
     width: 50%;
+
+    &_secondary {
+      width: 25%;
+      position: relative;
+      bottom: 4rem;
+    }
   }
 }
