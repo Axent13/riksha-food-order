@@ -1,0 +1,21 @@
+.about-company {
+  position: relative;
+
+  &__text {
+    max-width: 34.563rem;
+    font-size: 1.25rem;
+    font-family: 'TT Interfaces';
+    font-weight: 300;
+    margin-top: 3.625rem;
+  }
+
+  &__images {
+    position: absolute;
+    right: -18rem;
+    bottom: -5rem;
+  }
+
+  &__image {
+    width: 50%;
+  }
+}

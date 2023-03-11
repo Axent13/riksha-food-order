@@ -15,6 +15,7 @@ import ComboMenu from '../components/ui/comboMenu/comboMenu';
 import FeaturesList from '../components/common/features/featuresList';
 import Promos from '../components/ui/promos/promos';
 import Categories from '../components/ui/categories/categories';
+import AboutCompany from '../components/ui/aboutCompany/aboutCompany';
 
 const Mainpage = () => {
   return (
@@ -47,7 +48,10 @@ const Mainpage = () => {
         <SectionHeader text='Категории' rightCenterImg={tableRollImg} />
         <Categories />
       </div>
-      <SectionHeader text='О компании' rightCenterImg={messageRollImg} />
+      <div className='mainpage__about-company'>
+        <SectionHeader text='О компании' rightCenterImg={messageRollImg} />
+        <AboutCompany />
+      </div>
       <Footer />
     </>
   );
