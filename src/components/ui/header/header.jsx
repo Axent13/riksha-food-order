@@ -23,7 +23,7 @@ const Header = () => {
       </div>
       <div className='header__bottom-part'>
         <div className='header__bottom-part-wrapper'>
-          <FoodCategoryButtonList />
+          <FoodCategoryButtonList isInHeader={true} />
         </div>
       </div>
     </header>
