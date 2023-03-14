@@ -1,6 +1,5 @@
 import React from 'react';
 import Header from '../components/ui/header/header';
-import Footer from '../components/footer';
 import PromoSlider from '../components/common/promoSlider/promoSlider';
 
 import './mainpage.scss';
@@ -17,6 +16,7 @@ import Promos from '../components/ui/promos/promos';
 import Categories from '../components/ui/categories/categories';
 import AboutCompany from '../components/ui/aboutCompany/aboutCompany';
 import InstagramBlock from '../components/ui/instagramBlock/instagramBlock';
+import Footer from '../components/ui/footer/footer';
 
 const Mainpage = () => {
   return (
@@ -56,7 +56,9 @@ const Mainpage = () => {
       <section className='mainpage__instagram'>
         <InstagramBlock />
       </section>
-      <Footer />
+      <section className='mainpage__footer'>
+        <Footer />
+      </section>
     </>
   );
 };
