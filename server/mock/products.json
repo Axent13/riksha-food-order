@@ -1,0 +1,135 @@
+[
+  {
+    "_id": "d57ac044-a8fe-11ed-afa1-0242ac120002",
+    "title": "Ролл \"Филадельфия\"",
+    "imageSrc": "../../../assets/productsImages/roll-philadelphia.png",
+    "components": "Лосось, сыр \"Филадельфия\", огурец, авокадо",
+    "properties": {
+      "isHotRoll": true,
+      "isSpicy": true
+    },
+    "features": {
+      "isTop": true
+    },
+    "weight": "200 грамм",
+    "kkals": "130 Ккал",
+    "oldPrice": "269 ₽",
+    "newPrice": "219 ₽"
+  },
+  {
+    "_id": "d57ac4d6-a8fe-11ed-afa1-0242ac120002",
+    "title": "Ролл \"Сливочная креветка\"",
+    "imageSrc": "../../../assets/productsImages/roll-creamy-shrimp.png",
+    "components": "Лосось, сыр \"Филадельфия\", огурец, авокадо",
+    "properties": {
+      "isHotRoll": true
+    },
+    "features": {
+      "isTop": true
+    },
+    "weight": "200 грамм",
+    "kkals": "130 Ккал",
+    "oldPrice": "224 ₽",
+    "newPrice": "219 ₽"
+  },
+  {
+    "_id": "d57ac6fc-a8fe-11ed-afa1-0242ac120002",
+    "title": "Ролл \"Чикен энд Чиз\"",
+    "imageSrc": "../../../assets/productsImages/roll-philadelphia.png",
+    "components": "Лосось, сыр \"Филадельфия\", огурец, авокадо",
+    "properties": {
+      "isHotRoll": true,
+      "isSpicy": true
+    },
+    "features": {
+      "isTop": true
+    },
+    "weight": "200 грамм",
+    "kkals": "130 Ккал",
+    "oldPrice": "232 ₽",
+    "newPrice": "199 ₽"
+  },
+  {
+    "_id": "8c882663-3b55-49c5-91e9-fda980564235",
+    "title": "Комбо микс",
+    "imageSrc": "../../../assets/productsImages/combo-mix.png",
+    "components": "Пицца Баварская; Сет Фирменный",
+    "features": {
+      "isNew": true
+    },
+    "weight": "200 грамм",
+    "kkals": "130 Ккал",
+    "oldPrice": "1 499 ₽",
+    "newPrice": "1 319 ₽"
+  },
+  {
+    "_id": "9daef3ef-fd17-42e2-a31c-b21a295dd348",
+    "title": "Дабл пицца",
+    "imageSrc": "../../../assets/productsImages/double-pizza.png",
+    "components": "Пицца Баварская; Пицца 4 Сыра; Coca-cola (1 л)",
+    "weight": "200 грамм",
+    "kkals": "130 Ккал",
+    "oldPrice": "999 ₽",
+    "newPrice": "899 ₽"
+  },
+  {
+    "_id": "7e738471-169c-44b5-a1fe-0a3da3bbffe7",
+    "title": "Комбо Small party",
+    "imageSrc": "../../../assets/productsImages/combo-small-party.png",
+    "components": "Пицца Неополитано; Пицца Царская; Сет Суши шок",
+    "weight": "200 грамм",
+    "kkals": "130 Ккал",
+    "oldPrice": "2 111 ₽",
+    "newPrice": "1 799 ₽"
+  },
+  {
+    "_id": "d57ac044-a8fe-11ed-afa1-0242ac120002",
+    "title": "Ролл \"Филадельфия\"",
+    "imageSrc": "../../../assets/productsImages/roll-philadelphia.png",
+    "components": "Лосось, сыр \"Филадельфия\", огурец, авокадо",
+    "properties": {
+      "isHotRoll": true,
+      "isSpicy": true
+    },
+    "features": {
+      "isTop": true
+    },
+    "weight": "200 грамм",
+    "kkals": "130 Ккал",
+    "oldPrice": "269 ₽",
+    "newPrice": "219 ₽"
+  },
+  {
+    "_id": "d57ac4d6-a8fe-11ed-afa1-0242ac120002",
+    "title": "Ролл \"Сливочная креветка\"",
+    "imageSrc": "../../../assets/productsImages/roll-creamy-shrimp.png",
+    "components": "Лосось, сыр \"Филадельфия\", огурец, авокадо",
+    "properties": {
+      "isHotRoll": true
+    },
+    "features": {
+      "isTop": true
+    },
+    "weight": "200 грамм",
+    "kkals": "130 Ккал",
+    "oldPrice": "224 ₽",
+    "newPrice": "219 ₽"
+  },
+  {
+    "_id": "d57ac6fc-a8fe-11ed-afa1-0242ac120002",
+    "title": "Ролл \"Чикен энд Чиз\"",
+    "imageSrc": "../../../assets/productsImages/roll-philadelphia.png",
+    "components": "Лосось, сыр \"Филадельфия\", огурец, авокадо",
+    "properties": {
+      "isHotRoll": true,
+      "isSpicy": true
+    },
+    "features": {
+      "isTop": true
+    },
+    "weight": "200 грамм",
+    "kkals": "130 Ккал",
+    "oldPrice": "232 ₽",
+    "newPrice": "199 ₽"
+  }
+]
