@@ -1,16 +1,44 @@
-const {Schema, model} = require('mongoose')
+const { Schema, model } = require("mongoose");
 
-const schema = new Schema({
-  name: {
-    type: String,
-    required: true
+const schema = new Schema(
+  {
+    title: {
+      type: String,
+      required: true,
+    },
+    imageSrc: {
+      type: String,
+    },
+    components: {
+      type: String,
+    },
+    weight: {
+      type: String,
+    },
+    kkals: {
+      type: String,
+    },
+    oldPrice: {
+      type: String,
+    },
+    price: {
+      type: String,
+      required: true,
+    },
+    categories: {
+      type: Array,
+      required: true,
+    },
+    properties: {
+      type: Object,
+    },
+    features: {
+      type: Object,
+    },
   },
-  color: {
-    type: String,
-    required: true
+  {
+    timestamps: true,
   }
-}, {
-  timestamps: true
-})
+);
 
-module.exports = model('Quality', schema)
+module.exports = model("Product", schema);
