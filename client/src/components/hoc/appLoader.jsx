@@ -1,10 +1,11 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import {
   getProductsLoadingStatus,
   loadProductsList,
 } from '../../store/products';
 import { useDispatch, useSelector } from 'react-redux';
+import Loader from '../common/loader/loader';
 
 const AppLoader = ({ children }) => {
   const dispatch = useDispatch();
@@ -14,8 +15,9 @@ const AppLoader = ({ children }) => {
     dispatch(loadProductsList());
   }, []);
 
-  if (productsLoadingStatus) return 'loading...';
-
+  if (productsLoadingStatus) {
+    return <Loader isWholeHeight={true} />;
+  }
   return children;
 };
 

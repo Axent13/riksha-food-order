@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import FoodCategoryButton from './foodCategoryButton';
 import { foodCategoryInfo } from './foodCategoryInfo';
+import Loader from '../loader/loader';
 
 const FoodCategoryButtonList = ({ isInHeader }) => {
   if (foodCategoryInfo) {
@@ -13,7 +14,7 @@ const FoodCategoryButtonList = ({ isInHeader }) => {
       />
     ));
   } else {
-    return 'Loading...';
+    return <Loader />;
   }
 };
 
