@@ -18,7 +18,7 @@ const products = [
     weight: '200 грамм',
     kkals: '130 Ккал',
     oldPrice: '1 499 ₽',
-    newPrice: '1 319 ₽',
+    price: '1 319 ₽',
   },
   {
     _id: '9daef3ef-fd17-42e2-a31c-b21a295dd348',
@@ -28,7 +28,7 @@ const products = [
     weight: '200 грамм',
     kkals: '130 Ккал',
     oldPrice: '999 ₽',
-    newPrice: '899 ₽',
+    price: '899 ₽',
   },
   {
     _id: '7e738471-169c-44b5-a1fe-0a3da3bbffe7',
@@ -38,7 +38,7 @@ const products = [
     weight: '200 грамм',
     kkals: '130 Ккал',
     oldPrice: '2 111 ₽',
-    newPrice: '1 799 ₽',
+    price: '1 799 ₽',
   },
 ];
 

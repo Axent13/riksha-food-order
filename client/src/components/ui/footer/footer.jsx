@@ -86,27 +86,12 @@ const Footer = () => {
           </li>
           <li className='footer__category-container'>
             <a href='mock/change/me' className='footer__category-link'>
-              Супы
-            </a>
-          </li>
-          <li className='footer__category-container'>
-            <a href='mock/change/me' className='footer__category-link'>
-              Салаты
-            </a>
-          </li>
-          <li className='footer__category-container'>
-            <a href='mock/change/me' className='footer__category-link'>
-              Десерты
-            </a>
-          </li>
-          <li className='footer__category-container'>
-            <a href='mock/change/me' className='footer__category-link'>
               Напитки
             </a>
           </li>
           <li className='footer__category-container'>
             <a href='mock/change/me' className='footer__category-link'>
-              Акции
+              Закуски
             </a>
           </li>
         </ul>

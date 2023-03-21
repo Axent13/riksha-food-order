@@ -4,6 +4,7 @@ import ProductFeatures from './productFeatures';
 import ProductProperties from './productProperties';
 import './productCard.scss';
 import Button from '../../common/button/button';
+import noPhotoImg from '../../../assets/no-photo.png';
 
 const ProductCard = ({ product }) => {
   const addToCart = () => {
@@ -13,19 +14,31 @@ const ProductCard = ({ product }) => {
   return (
     <div className='product-card'>
       <div className='product-card__image-with-icons'>
-        <img src={product.imageSrc} alt='' />
-        <div className='product-card__properties'>
-          <ProductProperties properties={product.properties} />
-        </div>
-        <div className='product-card__features'>
-          <ProductFeatures features={product.features} />
-        </div>
+        <img
+          className='product-card__image'
+          src={product.imageSrc || noPhotoImg}
+          alt=''
+        />
+        {product.properties && (
+          <div className='product-card__properties'>
+            <ProductProperties properties={product.properties} />
+          </div>
+        )}
+        {product.features && (
+          <div className='product-card__features'>
+            <ProductFeatures features={product.features} />
+          </div>
+        )}
       </div>
       <div className='product-card__content'>
         <div className='product-card__weight-and-kkals'>
-          <p>{product.weight}</p>
-          <div className='product-card__separator'></div>
-          <p>{product.kkals}</p>
+          {product.weight && (
+            <>
+              <p> {product.weight}</p>
+              <div className='product-card__separator'></div>
+            </>
+          )}
+          {product.kkals && <p>{product.kkals}</p>}
         </div>
         <div className='product-card__title-and-components'>
           <p className='product-card__title'>{product.title}</p>
@@ -34,7 +47,7 @@ const ProductCard = ({ product }) => {
         <div className='product-card__price-and-button'>
           <div className='product-card__prices'>
             <p className='product-card__old-price'>{product.oldPrice}</p>
-            <p className='product-card__new-price'>{product.newPrice}</p>
+            <p className='product-card__new-price'>{product.price}</p>
           </div>
           <div className='product-card__order-button'>
             <Button onClickFunction={addToCart} text='Заказать' />

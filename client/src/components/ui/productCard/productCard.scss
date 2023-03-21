@@ -7,6 +7,10 @@
     position: relative;
   }
 
+  &__image {
+    width: 24rem;
+  }
+
   &__properties {
     position: absolute;
     top: 0.8rem;
@@ -29,6 +33,7 @@
     color: #B7B7B7;
     font-size: 0.875rem;
     align-items: center;
+    min-height: 1rem;
   }
 
   &__separator {
