@@ -17,7 +17,7 @@ const ProductCard = ({ product }) => {
         <img
           className='product-card__image'
           src={product.imageSrc || noPhotoImg}
-          alt=''
+          alt='No photo'
         />
         {product.properties && (
           <div className='product-card__properties'>
@@ -32,11 +32,9 @@ const ProductCard = ({ product }) => {
       </div>
       <div className='product-card__content'>
         <div className='product-card__weight-and-kkals'>
-          {product.weight && (
-            <>
-              <p> {product.weight}</p>
-              <div className='product-card__separator'></div>
-            </>
+          {product.weight && <p> {product.weight}</p>}
+          {product.weight && product.kkals && (
+            <div className='product-card__separator'></div>
           )}
           {product.kkals && <p>{product.kkals}</p>}
         </div>
