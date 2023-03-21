@@ -12,7 +12,7 @@ const products = [
     imageSrc: rollPhiladelphiaImg,
     components: 'Лосось, сыр "Филадельфия", огурец, авокадо',
     properties: {
-      isHotRoll: true,
+      isBaked: true,
       isSpicy: true,
     },
     features: {
@@ -29,7 +29,7 @@ const products = [
     imageSrc: rollCreamyShrimpImg,
     components: 'Лосось, сыр "Филадельфия", огурец, авокадо',
     properties: {
-      isHotRoll: true,
+      isBaked: true,
     },
     features: {
       isTop: true,
@@ -45,7 +45,7 @@ const products = [
     imageSrc: rollPhiladelphiaImg,
     components: 'Лосось, сыр "Филадельфия", огурец, авокадо',
     properties: {
-      isHotRoll: true,
+      isBaked: true,
       isSpicy: true,
     },
     features: {
