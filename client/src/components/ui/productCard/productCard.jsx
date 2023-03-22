@@ -4,7 +4,7 @@ import ProductFeatures from './productFeatures';
 import ProductProperties from './productProperties';
 import './productCard.scss';
 import Button from '../../common/button/button';
-import noPhotoImg from '../../../assets/no-photo.png';
+import Image from '../../common/image/image';
 
 const ProductCard = ({ product }) => {
   const addToCart = () => {
@@ -14,11 +14,7 @@ const ProductCard = ({ product }) => {
   return (
     <div className='product-card'>
       <div className='product-card__image-with-icons'>
-        <img
-          className='product-card__image'
-          src={product.imageSrc || noPhotoImg}
-          alt='No photo'
-        />
+        <Image image={product.image} />
         {product.properties && (
           <div className='product-card__properties'>
             <ProductProperties properties={product.properties} />

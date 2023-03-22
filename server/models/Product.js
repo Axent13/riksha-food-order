@@ -6,7 +6,7 @@ const schema = new Schema(
       type: String,
       required: true,
     },
-    imageSrc: {
+    image: {
       type: String,
     },
     components: {

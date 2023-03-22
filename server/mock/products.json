@@ -1,7 +1,7 @@
 [
   {
     "title": "4 сыра",
-    "imageSrc": "../../../assets/productsImages/4-sira.jpg",
+    "image": "chetyre-sira",
     "components": "Тесто, белый соус, сыр моцарелла, сыр пармезан, сыр дор блю, сыр сливочный",
     "weight": "390 грамм",
     "price": "380 ₽",
@@ -9,7 +9,7 @@
   },
   {
     "title": "Белая",
-    "imageSrc": "../../../assets/productsImages/belaya.jpg",
+    "image": "belaya",
     "components": "Тесто, белый соус, сыр моцарелла, чесночный микс",
     "weight": "390 грамм",
     "price": "380 ₽",
@@ -17,7 +17,7 @@
   },
   {
     "title": "Грибы с ветчиной",
-    "imageSrc": "../../../assets/productsImages/vetchina-i-gribi.jpg",
+    "image": "vetchina-i-gribi",
     "components": "Тесто, томатный соус, сыр моцарелла, ветчина, шампиньоны",
     "weight": "440 грамм",
     "price": "380 ₽",
@@ -25,7 +25,7 @@
   },
   {
     "title": "Кальяри",
-    "imageSrc": "../../../assets/productsImages/kalyari.jpg",
+    "image": "kalyari",
     "components": "Тесто, томатный соус, соус BBQ, сыр моцарелла, куриное филе, красный лук, ветчина, маринованный огурец",
     "weight": "410 грамм",
     "price": "380 ₽",
@@ -33,7 +33,7 @@
   },
   {
     "title": "Курица Ранч",
-    "imageSrc": "../../../assets/productsImages/kurica-ranch.jpg",
+    "image": "kurica-ranch",
     "components": "Тесто, ранч соус, сыр моцарелла, сыр пармезан, куриное филе, болгарский перец, красный лук, орегано",
     "weight": "440 грамм",
     "price": "380 ₽",
@@ -41,7 +41,7 @@
   },
   {
     "title": "Маргарита",
-    "imageSrc": "../../../assets/productsImages/margarita.jpg",
+    "image": "margarita",
     "components": "Тесто, томатный соус, сыр моцарелла, томаты",
     "weight": "350 грамм",
     "price": "380 ₽",
@@ -49,7 +49,7 @@
   },
   {
     "title": "Мясная",
-    "imageSrc": "../../../assets/productsImages/masnyaya.jpg",
+    "image": "masnyaya",
     "components": "Тесто, томатный соус, сыр моцарелла, охотничьи колбаски, колбаски пепперони, перец болгарский, лук красный",
     "weight": "430 грамм",
     "price": "380 ₽",
@@ -57,7 +57,7 @@
   },
   {
     "title": "Пепперони",
-    "imageSrc": "../../../assets/productsImages/peperoni.jpg",
+    "image": "peperoni",
     "components": "Тесто, томатный соус, сыр моцарелла, колбаски пеперони",
     "weight": "450 грамм",
     "price": "380 ₽",
@@ -65,7 +65,7 @@
   },
   {
     "title": "С ветчиной",
-    "imageSrc": "../../../assets/productsImages/s-vetchinoy.jpg",
+    "image": "s-vetchinoy",
     "components": "Тесто, томатный соус, сыр моцарелла, ветчина",
     "weight": "390 грамм",
     "price": "380 ₽",
@@ -73,7 +73,7 @@
   },
   {
     "title": "Цезарь",
-    "imageSrc": "../../../assets/productsImages/cezar.jpg",
+    "image": "cezar",
     "components": "Тесто, сливочный соус, соус Цезарь, сыр моцарелла, куриное филе, салат айсберг, томаты",
     "weight": "460 грамм",
     "price": "380 ₽",
@@ -81,7 +81,7 @@
   },
   {
     "title": "Суши Гриль Креветка",
-    "imageSrc": "../../../assets/productsImages/sushi_gril.jpg",
+    "image": "sushi-gril",
     "components": "Рис, Нори, Креветка",
     "weight": "37 грамм",
     "price": "95 ₽",
@@ -92,7 +92,7 @@
   },
   {
     "title": "Суши Гриль Лосось",
-    "imageSrc": "../../../assets/productsImages/sushi_gril.jpg",
+    "image": "sushi-gril",
     "components": "Рис, Нори, Лосось",
     "weight": "37 грамм",
     "kkals": "130 ккал",
@@ -104,7 +104,7 @@
   },
   {
     "title": "Суши Гриль Окунь",
-    "imageSrc": "../../../assets/productsImages/sushi_gril.jpg",
+    "image": "sushi-gril",
     "components": "Рис, Нори, Окунь",
     "weight": "37 грамм",
     "kkals": "130 ккал",
@@ -116,7 +116,7 @@
   },
   {
     "title": "Суши Гриль Угорь",
-    "imageSrc": "../../../assets/productsImages/sushi_gril.jpg",
+    "image": "sushi-gril",
     "components": "Рис, Нори, Угорь",
     "weight": "37 грамм",
     "kkals": "130 ккал",
@@ -128,7 +128,7 @@
   },
   {
     "title": "Суши Гриль Угорь",
-    "imageSrc": "../../../assets/productsImages/sushi_gril.jpg",
+    "image": "sushi-gril",
     "components": "Рис, Нори, Угорь",
     "weight": "37 грамм",
     "kkals": "130 ккал",
@@ -140,7 +140,7 @@
   },
   {
     "title": "Суши Спайси Креветка",
-    "imageSrc": "../../../assets/productsImages/sushi_spajsi.jpg",
+    "image": "sushi-spajsi",
     "components": "Рис, Нори, Креветка, Соус Спайси",
     "weight": "37 грамм",
     "kkals": "130 ккал",
@@ -152,7 +152,7 @@
   },
   {
     "title": "Суши Спайси Лосось",
-    "imageSrc": "../../../assets/productsImages/sushi_spajsi.jpg",
+    "image": "sushi-spajsi",
     "components": "Рис, Нори, Лосось, Соус Спайси",
     "weight": "37 грамм",
     "kkals": "130 ккал",
@@ -164,7 +164,7 @@
   },
   {
     "title": "Суши Спайси Окунь",
-    "imageSrc": "../../../assets/productsImages/sushi_spajsi.jpg",
+    "image": "sushi-spajsi",
     "components": "Рис, Нори, Окунь, Соус Спайси",
     "weight": "37 грамм",
     "kkals": "130 ккал",
@@ -176,7 +176,7 @@
   },
   {
     "title": "Суши Спайси Угорь",
-    "imageSrc": "../../../assets/productsImages/sushi_spajsi.jpg",
+    "image": "sushi-spajsi",
     "components": "Рис, Нори, Угорь, Соус Спайси",
     "weight": "37 грамм",
     "kkals": "130 ккал",
@@ -188,7 +188,7 @@
   },
   {
     "title": "Суши Креветка",
-    "imageSrc": "../../../assets/productsImages/sushi_krevetka.jpg",
+    "image": "sushi-krevetka",
     "components": "Рис, Креветка",
     "weight": "35 грамм",
     "kkals": "110 ккал",
@@ -197,7 +197,7 @@
   },
   {
     "title": "Суши Лосось",
-    "imageSrc": "../../../assets/productsImages/sushi_losos.jpg",
+    "image": "sushi-losos",
     "components": "Рис, лосось",
     "weight": "35 грамм",
     "kkals": "115 ккал",
@@ -206,7 +206,7 @@
   },
   {
     "title": "Суши Окунь",
-    "imageSrc": "../../../assets/productsImages/sushi_okun.jpg",
+    "image": "sushi-okun",
     "components": "Рис, Окунь",
     "weight": "35 грамм",
     "kkals": "110 ккал",
@@ -215,7 +215,7 @@
   },
   {
     "title": "Суши Угорь",
-    "imageSrc": "../../../assets/productsImages/sushi_ugor.jpg",
+    "image": "sushi-ugor",
     "components": "Рис, Угорь, Соус Унаги, Кунжут",
     "weight": "38 грамм",
     "kkals": "120 ккал",
@@ -224,7 +224,7 @@
   },
   {
     "title": "Запеченный ролл Балдеж",
-    "imageSrc": "../../../assets/productsImages/baldezh.jpg",
+    "image": "baldezh",
     "components": "Рис, Нори, Сыр Креметте, Снежный Краб, Огурец, Соус Нежный чили, Кунжут",
     "weight": "251 грамм",
     "kkals": "155 ккал",
@@ -236,7 +236,7 @@
   },
   {
     "title": "Запеченный ролл Восторг",
-    "imageSrc": "../../../assets/productsImages/vostorg.jpg",
+    "image": "vostorg",
     "components": "Рис, Маменори, Сыр Креметте, Снежный Краб, Авокадо, Креветка, Соус Нежный чили",
     "weight": "246 грамм",
     "kkals": "150 ккал",
@@ -248,7 +248,7 @@
   },
   {
     "title": "Запеченный ролл Грин",
-    "imageSrc": "../../../assets/productsImages/grin.jpg",
+    "image": "grin",
     "components": "Рис, Нори, Соус Спайси, Лосось, Огурец, Укроп, Майонез, Пармезан",
     "weight": "246 грамм",
     "kkals": "150 ккал",
@@ -260,7 +260,7 @@
   },
   {
     "title": "Запеченный ролл Джек",
-    "imageSrc": "../../../assets/productsImages/dzhek.jpg",
+    "image": "dzhek",
     "components": "Рис, Нори, Майонез, Снежный краб, Огурец, Кунжут, Майонез, Терияки",
     "weight": "246 грамм",
     "kkals": "155 ккал",
@@ -272,7 +272,7 @@
   },
   {
     "title": "Запеченный ролл Идеал",
-    "imageSrc": "../../../assets/productsImages/ideal.jpg",
+    "image": "ideal",
     "components": "Рис, Нори, Сыр Креметте, Снежный Краб, Огурец, Кунжут, Угорь, Майонез, Лук зеленый",
     "weight": "256 грамм",
     "kkals": "158 ккал",
@@ -284,7 +284,7 @@
   },
   {
     "title": "Запеченный ролл Курбекон",
-    "imageSrc": "../../../assets/productsImages/kurbekon.jpg",
+    "image": "kurbekon",
     "components": "Рис, Нори, Сыр Креметте, Курица копченая, Бекон, Огурец, Терияки, Кунжут",
     "weight": "233 грамм",
     "kkals": "160 ккал",
@@ -296,7 +296,7 @@
   },
   {
     "title": "Запеченный ролл Нежный",
-    "imageSrc": "../../../assets/productsImages/nezhnyj.jpg",
+    "image": "nezhnyj",
     "components": "Рис, Нори, Сыр Креметте, Лосось, Авокадо, Масага, Майонез, Пармезан",
     "weight": "261 грамм",
     "kkals": "158 ккал",
@@ -308,7 +308,7 @@
   },
   {
     "title": "Запеченный ролл Окуняо",
-    "imageSrc": "../../../assets/productsImages/okunyao.jpg",
+    "image": "okunyao",
     "components": "Рис, Нори, Сыр Креметте, Томаго, Огурец, Соус Терияки, Окунь, Майонез, Пармезан, Соус Ким чи",
     "weight": "253 грамм",
     "kkals": "160 ккал",
@@ -320,7 +320,7 @@
   },
   {
     "title": "Ролл Авокадо",
-    "imageSrc": "../../../assets/productsImages/avokado.jpg",
+    "image": "avokado",
     "components": "Рис, Нори, Авокадо",
     "weight": "101 грамм",
     "kkals": "115 ккал",
@@ -329,7 +329,7 @@
   },
   {
     "title": "Ролл Авокадо",
-    "imageSrc": "../../../assets/productsImages/krevetka.jpg",
+    "image": "krevetka",
     "components": "Рис, Нори, Креветка",
     "weight": "101 грамм",
     "kkals": "125 ккал",
@@ -338,7 +338,7 @@
   },
   {
     "title": "Ролл Лосось",
-    "imageSrc": "../../../assets/productsImages/losos.jpg",
+    "image": "losos",
     "components": "Рис, Нори, Лосось",
     "weight": "101 грамм",
     "kkals": "120 ккал",
@@ -347,7 +347,7 @@
   },
   {
     "title": "Ролл Огурец",
-    "imageSrc": "../../../assets/productsImages/ogurec.jpg",
+    "image": "ogurec",
     "components": "Рис, Нори, Огурец, Кунжут",
     "weight": "103 грамм",
     "kkals": "115 ккал",
@@ -356,7 +356,7 @@
   },
   {
     "title": "Ролл Окунь",
-    "imageSrc": "../../../assets/productsImages/okun.jpg",
+    "image": "okun",
     "components": "Рис, Нори, Окунь",
     "weight": "101 грамм",
     "kkals": "120 ккал",
@@ -365,7 +365,7 @@
   },
   {
     "title": "Ролл Снежный Краб",
-    "imageSrc": "../../../assets/productsImages/snezhnyj_krab.jpg",
+    "image": "snezhnyj-krab",
     "components": "Рис, Нори, Снежный Краб",
     "weight": "108 грамм",
     "kkals": "120 ккал",
@@ -374,7 +374,7 @@
   },
   {
     "title": "Ролл Тунец",
-    "imageSrc": "../../../assets/productsImages/tunec.jpg",
+    "image": "tunec",
     "components": "Рис, Нори, Тунец",
     "weight": "101 грамм",
     "kkals": "120 ккал",
@@ -383,7 +383,7 @@
   },
   {
     "title": "Ролл Блага",
-    "imageSrc": "../../../assets/productsImages/blaga.jpg",
+    "image": "blaga",
     "components": "Рис, Нори, Сыр Креметте, Снежный Краб, Огурец, Окунь, Соус Нежный чили, Кунжут",
     "weight": "243 грамм",
     "kkals": "140 ккал",
@@ -395,7 +395,7 @@
   },
   {
     "title": "Ролл Бонито",
-    "imageSrc": "../../../assets/productsImages/bonito.jpg",
+    "image": "bonito",
     "components": "Рис, Нори, Сыр Креметте, Тунец, Огурец, Стружка тунца",
     "weight": "216 грамм",
     "kkals": "140 ккал",
@@ -407,7 +407,7 @@
   },
   {
     "title": "Ролл Дракон",
-    "imageSrc": "../../../assets/productsImages/drakon.jpg",
+    "image": "drakon",
     "components": "Рис, Нори, Сыр Креметте, Огурец, Угорь, Лосось, Стружка тунца",
     "weight": "216 грамм",
     "kkals": "143 ккал",
@@ -419,7 +419,7 @@
   },
   {
     "title": "Ролл Дуо",
-    "imageSrc": "../../../assets/productsImages/duo.jpg",
+    "image": "duo",
     "components": "Рис, Нори, Сыр Креметте, Лосось, Авокадо, Угорь, Соус Унаги, Кунжут",
     "weight": "233 грамм",
     "kkals": "142 ккал",
@@ -431,7 +431,7 @@
   },
   {
     "title": "Ролл Жар лосось",
-    "imageSrc": "../../../assets/productsImages/zhar_losos.jpg",
+    "image": "zhar-losos",
     "components": "Рис, Нори, Соус Спайси, Лосось жареный, Огурец, Соус Брусничный Терияки",
     "weight": "216 грамм",
     "kkals": "139 ккал",
@@ -443,7 +443,7 @@
   },
   {
     "title": "Ролл Калифорния Креветка",
-    "imageSrc": "../../../assets/productsImages/kaliforniya.jpg",
+    "image": "kaliforniya",
     "components": "Рис, Нори, Майонез, Креветка, Огурец, Масага",
     "weight": "216 грамм",
     "kkals": "140 ккал",
@@ -455,7 +455,7 @@
   },
   {
     "title": "Ролл Калифорния Лосось",
-    "imageSrc": "../../../assets/productsImages/kaliforniya.jpg",
+    "image": "kaliforniya",
     "components": "Рис, Нори, Майонез, Лосось, Огурец, Масага",
     "weight": "216 грамм",
     "kkals": "142 ккал",
@@ -467,7 +467,7 @@
   },
   {
     "title": "Ролл Калифорния Снежный Краб",
-    "imageSrc": "../../../assets/productsImages/kaliforniya.jpg",
+    "image": "kaliforniya",
     "components": "Рис, Нори, Майонез, Снежный краб, Огурец, Масага",
     "weight": "216 грамм",
     "kkals": "140 ккал",
@@ -479,7 +479,7 @@
   },
   {
     "title": "Ролл Калифорния Угорь",
-    "imageSrc": "../../../assets/productsImages/kaliforniya.jpg",
+    "image": "kaliforniya",
     "components": "Рис, Нори, Майонез, Угорь, Огурец, Масага",
     "weight": "216 грамм",
     "kkals": "142 ккал",
@@ -491,7 +491,7 @@
   },
   {
     "title": "Ролл Канада",
-    "imageSrc": "../../../assets/productsImages/kanada.jpg",
+    "image": "kanada",
     "components": "Рис, Нори, Сыр Креметте, Лосось, Огурец, Угорь, Соус Унаги, Кунжут",
     "weight": "228 грамм",
     "kkals": "140 ккал",
@@ -503,7 +503,7 @@
   },
   {
     "title": "Ролл Креветуля",
-    "imageSrc": "../../../assets/productsImages/krevetulya.jpg",
+    "image": "krevetulya",
     "components": "Рис, Нори, Сыр Креметте, Краб, Огурец, Креветка, Нежный чили",
     "weight": "241 грамм",
     "kkals": "147 ккал",
@@ -515,7 +515,7 @@
   },
   {
     "title": "Ролл Кукура",
-    "imageSrc": "../../../assets/productsImages/kukura.jpg",
+    "image": "kukura",
     "components": "Рис, Нори, Соус Сырный, Курица копченая, Огурец, Бекон, Соус Терияки, Лук криспи",
     "weight": "236 грамм",
     "kkals": "150 ккал",
@@ -527,7 +527,7 @@
   },
   {
     "title": "Ролл Лососян",
-    "imageSrc": "../../../assets/productsImages/lososyan.jpg",
+    "image": "lososyan",
     "components": "Рис, Нори, Сыр Креметте, Лосось, Огурец, Авокадо, Масага",
     "weight": "241 грамм",
     "kkals": "145 ккал",
@@ -539,7 +539,7 @@
   },
   {
     "title": "Ролл Мажор",
-    "imageSrc": "../../../assets/productsImages/mazhor.jpg",
+    "image": "mazhor",
     "components": "Рис, Нори, Сыр Креметте, Лосось, Огурец, Угорь, Соус Унаги, Кунжут",
     "weight": "253 грамм",
     "kkals": "145 ккал",
@@ -551,19 +551,7 @@
   },
   {
     "title": "Ролл Маменори",
-    "imageSrc": "../../../assets/productsImages/mamenori.jpg",
-    "components": "Рис, Маменори, Сыр Креметте, Креветка, Авокадо, Соус Нежный чили",
-    "weight": "211 грамм",
-    "kkals": "135 ккал",
-    "price": "280 ₽",
-    "categories": ["roll"],
-    "properties": {
-      "isBranded": true
-    }
-  },
-  {
-    "title": "Ролл Маменори",
-    "imageSrc": "../../../assets/productsImages/mamenori.jpg",
+    "image": "mamenori",
     "components": "Рис, Маменори, Сыр Креметте, Креветка, Авокадо, Соус Нежный чили",
     "weight": "211 грамм",
     "kkals": "135 ккал",
@@ -575,7 +563,7 @@
   },
   {
     "title": "Ролл Огуречный",
-    "imageSrc": "../../../assets/productsImages/ogurechnyj.jpg",
+    "image": "ogurechnyj",
     "components": "Рис, Нори, Сыр Креметте, Снежный Краб, Масага, Огурец, Соус Унаги, Кунжут",
     "weight": "243 грамм",
     "kkals": "140 ккал",
@@ -587,7 +575,7 @@
   },
   {
     "title": "Ролл Тар-Тар",
-    "imageSrc": "../../../assets/productsImages/tar_tar.jpg",
+    "image": "tar-tar",
     "components": "Рис, Нори, Соус Спайси, Огурец, Томаго, Тунец, Лук зеленый",
     "weight": "248 грамм",
     "kkals": "145 ккал",
@@ -599,7 +587,7 @@
   },
   {
     "title": "Ролл Укропчик",
-    "imageSrc": "../../../assets/productsImages/ukropchik.jpg",
+    "image": "ukropchik",
     "components": "Рис, Нори, Соус Сырный, Окунь в кляре, Огурец, Укроп",
     "weight": "206 грамм",
     "kkals": "137 ккал",
@@ -611,7 +599,7 @@
   },
   {
     "title": "Ролл Улыбка Лосося",
-    "imageSrc": "../../../assets/productsImages/ulybka_lososya.jpg",
+    "image": "ulybka-lososya",
     "components": "Рис, Нори, Сыр Креметте, Лосось, Авокадо, Кунжут",
     "weight": "211 грамм",
     "kkals": "140 ккал",
@@ -623,7 +611,7 @@
   },
   {
     "title": "Ролл Филадельфия лайт",
-    "imageSrc": "../../../assets/productsImages/filadelfiya_lajt.jpg",
+    "image": "filadelfiya-lajt",
     "components": "Рис, Нори, Сыр Креметте, Огурец, Лосось",
     "weight": "231 грамм",
     "kkals": "142 ккал",
@@ -635,7 +623,7 @@
   },
   {
     "title": "Ролл Филадельфия люкс",
-    "imageSrc": "../../../assets/productsImages/filadelfiya_lyuks.jpg",
+    "image": "filadelfiya-lyuks",
     "components": "Рис, Нори, Сыр Креметте, Лосось",
     "weight": "261 грамм",
     "kkals": "145 ккал",
@@ -647,7 +635,7 @@
   },
   {
     "title": "Ролл Хрустик",
-    "imageSrc": "../../../assets/productsImages/hrustik.jpg",
+    "image": "hrustik",
     "components": "Рис, Нори, Соус Спайси, Лосось жареный, Огурец, Лук Криспи, Стружка тунца, Соус Брусничный Терияки",
     "weight": "211 грамм",
     "kkals": "149 ккал",
@@ -659,7 +647,7 @@
   },
   {
     "title": "Ролл темпура Америка",
-    "imageSrc": "../../../assets/productsImages/amerika.jpg",
+    "image": "amerika",
     "components": "Рис, Нори, Сыр Креметте, Лосось, Угорь, Огурец, Соус Унаги, Кунжут, Панировка",
     "weight": "283 грамм",
     "kkals": "155 ккал",
@@ -671,7 +659,7 @@
   },
   {
     "title": "Ролл темпура Дабл",
-    "imageSrc": "../../../assets/productsImages/dabl.jpg",
+    "image": "dabl",
     "components": "Рис, Нори, Соус Нежный чили, Креветка, Лосось, Авокадо, Панировка",
     "weight": "266 грамм",
     "kkals": "156 ккал",
@@ -683,7 +671,7 @@
   },
   {
     "title": "Ролл темпура лосось",
-    "imageSrc": "../../../assets/productsImages/tempura_losos.jpg",
+    "image": "tempura-losos",
     "components": "Рис, Нори, Сыр Креметте, Лосось, Авокадо, Панировка",
     "weight": "261 грамм",
     "kkals": "155 ккал",
@@ -695,7 +683,7 @@
   },
   {
     "title": "Ролл темпура мясной",
-    "imageSrc": "../../../assets/productsImages/tempura_myasnoj.jpg",
+    "image": "tempura-myasnoj",
     "components": "Рис, Нори, Спайси, Кура копченая, Бекон, Огурец, Соус Брусничный Терияки, Панировка",
     "weight": "286 грамм",
     "kkals": "160 ккал",
@@ -707,7 +695,7 @@
   },
   {
     "title": "Ролл темпура окунь",
-    "imageSrc": "../../../assets/productsImages/tempura_okun.jpg",
+    "image": "tempura-okun",
     "components": "Рис, Нори, Соус Сырный, Окунь, Огурец, Томаго, Панировка",
     "weight": "276 грамм",
     "kkals": "155 ккал",
@@ -719,7 +707,7 @@
   },
   {
     "title": "Ролл темпура Сакура",
-    "imageSrc": "../../../assets/productsImages/sakura.jpg",
+    "image": "sakura",
     "components": "Рис, Нори, Сыр Креметте, Креветка, Огурец, Масага, Панировка, соус нежный Чили",
     "weight": "271 грамм",
     "kkals": "155 ккал",
@@ -731,7 +719,7 @@
   },
   {
     "title": "Ролл темпура Снежный краб",
-    "imageSrc": "../../../assets/productsImages/tempura_snezhnyj_krab.jpg",
+    "image": "tempura-snezhnyj-krab",
     "components": "Рис, Нори, Майонез, Снежный Краб, Огурец, Масага, Панировка",
     "weight": "266 грамм",
     "kkals": "150 ккал",
@@ -743,19 +731,7 @@
   },
   {
     "title": "Ролл темпура тунец",
-    "imageSrc": "../../../assets/productsImages/tempura_tunec.jpg",
-    "components": "Рис, Нори, Соус Спайси, Тунец, Огурец, Соус Спайси Терияки, Панировка",
-    "weight": "256 грамм",
-    "kkals": "150 ккал",
-    "price": "210 ₽",
-    "categories": ["roll"],
-    "properties": {
-      "isTempura": true
-    }
-  },
-  {
-    "title": "Ролл темпура тунец",
-    "imageSrc": "../../../assets/productsImages/tempura_tunec.jpg",
+    "image": "tempura-tunec",
     "components": "Рис, Нори, Соус Спайси, Тунец, Огурец, Соус Спайси Терияки, Панировка",
     "weight": "256 грамм",
     "kkals": "150 ккал",
@@ -767,7 +743,7 @@
   },
   {
     "title": "Ассорти сет 43шт.",
-    "imageSrc": "../../../assets/productsImages/assorti_set.jpg",
+    "image": "assorti-set",
     "components": "Суши Лосось, Суши Угорь, Суши Окунь, Снежный Краб, Огурец, Хрустик, Темпура окунь, Балдеж",
     "weight": "1048 грамм",
     "price": "1230 ₽",
@@ -775,7 +751,7 @@
   },
   {
     "title": "Вкусный сет 32шт.",
-    "imageSrc": "../../../assets/productsImages/vkusnyj_set.jpg",
+    "image": "vkusnyj-set",
     "components": "Филадельфия лайт, Калифорния Снежный Краб, Темпура окунь, Джек",
     "weight": "968 грамм",
     "price": "940 ₽",
@@ -783,7 +759,7 @@
   },
   {
     "title": "Для Вас сет 32шт.",
-    "imageSrc": "../../../assets/productsImages/dlya_vas_set.jpg",
+    "image": "dlya-vas-set",
     "components": "Огуречный, Жар лосось, Темпура Снежный краб, Темпура Тунец",
     "weight": "981 грамм",
     "price": "910 ₽",
@@ -791,7 +767,7 @@
   },
   {
     "title": "Запеченный сет 24шт.",
-    "imageSrc": "../../../assets/productsImages/zapechennyj_set.jpg",
+    "image": "zapechennyj-set",
     "components": "Джек, Окуняо, Грин",
     "weight": "981 грамм",
     "price": "770 ₽",
@@ -799,7 +775,7 @@
   },
   {
     "title": "Классика сет 32шт.",
-    "imageSrc": "../../../assets/productsImages/klassika_set.jpg",
+    "image": "klassika-set",
     "components": "Лосось, Огурец, Филадельфия лайт, Калифорния Снежный Краб",
     "weight": "649 грамм",
     "price": "780 ₽",
@@ -807,7 +783,7 @@
   },
   {
     "title": "Лайт сет 24шт.",
-    "imageSrc": "../../../assets/productsImages/lajt_set.jpg",
+    "image": "lajt-set",
     "components": "Огуречный, Темпура Мясной, Нежный",
     "weight": "789 грамм",
     "price": "800 ₽",
@@ -815,7 +791,7 @@
   },
   {
     "title": "Люкс сет 32шт.",
-    "imageSrc": "../../../assets/productsImages/lyuks_set.jpg",
+    "image": "lyuks-set",
     "components": "Филадельфия люкс, Маменори, Америка, Восторг",
     "weight": "1001 грамм",
     "price": "1470 ₽",
@@ -823,7 +799,7 @@
   },
   {
     "title": "Огонь сет 32шт.",
-    "imageSrc": "../../../assets/productsImages/ogon_set.jpg",
+    "image": "ogon-set",
     "components": "Сакура, Темпура Снежный краб, Нежный, Курбекон",
     "weight": "1030 грамм",
     "price": "1090 ₽",
@@ -831,7 +807,7 @@
   },
   {
     "title": "Отличный сет 48шт.",
-    "imageSrc": "../../../assets/productsImages/otlichnyj_set.jpg",
+    "image": "otlichnyj-set",
     "components": "Хрустик, Укропчик, Темпура мясной, Темпура лосось, Джек, Окуняо",
     "weight": "1461 грамм",
     "price": "1400 ₽",
@@ -839,7 +815,7 @@
   },
   {
     "title": "Рикша сет 72шт.",
-    "imageSrc": "../../../assets/productsImages/riksha_set.jpg",
+    "image": "riksha-set",
     "components": "Филадельфия лайт, Жар лосось, Укропчик, Темпура Мясной, Темпура Окунь, Темпура Снежный краб, Балдеж , Курбекон, Грин",
     "weight": "2209 грамм",
     "price": "2190 ₽",
@@ -847,7 +823,7 @@
   },
   {
     "title": "Суши сет 36шт.",
-    "imageSrc": "../../../assets/productsImages/sushi_set.jpg",
+    "image": "sushi-set",
     "components": "Суши Окунь 2шт, Спайси суши Креветка 2шт, Лосось, Тунец, Снежный Краб, Огурец",
     "weight": "548 грамм",
     "price": "790 ₽",
@@ -855,7 +831,7 @@
   },
   {
     "title": "Темпурный сет 24шт.",
-    "imageSrc": "../../../assets/productsImages/tempurnyj_set.jpg",
+    "image": "tempurnyj-set",
     "components": "Сакура, Темпура Снежный краб, Темпура Тунец",
     "weight": "793 грамм",
     "price": "700 ₽",
@@ -863,7 +839,7 @@
   },
   {
     "title": "Вок Креветки",
-    "imageSrc": "../../../assets/productsImages/WOK.jpg",
+    "image": "WOK",
     "components": "Креветка, Морковь, Кабачок, Перец болгарский, Лашпа Удон, Соус Соевый, Масло Кунжутное, Масло чесночное, Кунжут, Соус Терияки/Ким чи",
     "weight": "385 грамм",
     "kkals": "170 ккал",
@@ -872,7 +848,7 @@
   },
   {
     "title": "Вок Кура",
-    "imageSrc": "../../../assets/productsImages/WOK.jpg",
+    "image": "WOK",
     "components": "Курица, Морковь, Кабачок, Перец болгарский, Лапша Удон, Соус Соевый, Масло Кунжутное, Масло чесночное, Кунжут, Соус Терияки/Ким чи",
     "weight": "405 грамм",
     "kkals": "180 ккал",
@@ -881,7 +857,7 @@
   },
   {
     "title": "Вок МП",
-    "imageSrc": "../../../assets/productsImages/WOK.jpg",
+    "image": "WOK",
     "components": "Мидии, Креветка, Кальмар, Морковь, Кабачок, Перец болгарский, Лашпа Удон, Соус Соевый, Масло Кунжутное, Масло чесночное, Кунжут, Соус Терияки/Ким чи",
     "weight": "425 грамм",
     "kkals": "170 ккал",
@@ -890,7 +866,7 @@
   },
   {
     "title": "Вок Свинина",
-    "imageSrc": "../../../assets/productsImages/WOK.jpg",
+    "image": "WOK",
     "components": "Свинина, Морковь, Кабачок, Перец болгарский, Лашпа Удон, Соус Соевый, Масло Кунжутное, Масло чесночное, Кунжут, Соус Терияки/Ким чи",
     "weight": "405 грамм",
     "kkals": "180 ккал",
@@ -899,21 +875,21 @@
   },
   {
     "title": "Кола \"Черноголовка\" 1 л",
-    "imageSrc": "../../../assets/productsImages/kolajpg",
+    "image": "kola",
     "weight": "0 грамм",
     "price": "270 ₽",
     "categories": ["drink"]
   },
   {
     "title": "Сок добрый 1 л в ассортименте",
-    "imageSrc": "../../../assets/productsImages/sok.jpg",
+    "image": "sok",
     "weight": "0 грамм",
     "price": "150 ₽",
     "categories": ["drink"]
   },
   {
     "title": "Картофель Айдахо",
-    "imageSrc": "../../../assets/productsImages/od.jpg",
+    "image": "od",
     "weight": "180 грамм",
     "kkals": "100 ккал",
     "price": "149 ₽",
@@ -921,7 +897,7 @@
   },
   {
     "title": "Картофель фри",
-    "imageSrc": "../../../assets/productsImages/fri.jpg",
+    "image": "fri",
     "weight": "180 грамм",
     "kkals": "160 ккал",
     "price": "149 ₽",
@@ -929,7 +905,7 @@
   },
   {
     "title": "Мидии запеченные со спайси",
-    "imageSrc": "../../../assets/productsImages/midii_zapechennye_so_spajsi.jpg",
+    "image": "midii-zapechennye-so-spajsi",
     "weight": "180 грамм",
     "kkals": "120 ккал",
     "price": "330 ₽",
@@ -937,23 +913,23 @@
   },
   {
     "title": "Сырные палочки",
-    "imageSrc": "../../../assets/productsImages/sir-palochki.jpg",
+    "image": "sir-palochki",
     "weight": "150 грамм",
     "kkals": "430 ккал",
     "price": "199 ₽",
     "categories": ["snack"]
   },
   {
-    "title": "Сырные палочки",
-    "imageSrc": "../../../assets/productsImages/chuka_salat.jpg",
+    "title": "Чука",
+    "image": "chuka-salat",
     "weight": "138 грамм",
     "kkals": "97 ккал",
     "price": "195 ₽",
     "categories": ["snack"]
   },
   {
-    "title": "Сырные палочки",
-    "imageSrc": "../../../assets/productsImages/yebi_tempura.jpg",
+    "title": "Эби темпура",
+    "image": "yebi-tempura",
     "weight": "150 грамм",
     "kkals": "120 ккал",
     "price": "295 ₽",
