@@ -11,7 +11,6 @@ const Categories = () => {
   const [selectedCategory, setSelectedCategory] = useState('pizza');
 
   const handleClick = (item) => {
-    console.log('item in handleClick:', item);
     setSelectedCategory(item);
   };
 
