@@ -10,29 +10,36 @@ export const foodCategoryInfo = [
   {
     image: pizzaImg,
     text: 'Пицца',
+    categoryName: 'pizza',
   },
   {
     image: sushiImg,
     text: 'Суши',
+    categoryName: 'sushi',
   },
   {
     image: rolleImg,
     text: 'Роллы',
+    categoryName: 'roll',
   },
   {
     image: setImg,
     text: 'Сеты',
+    categoryName: 'set',
   },
   {
     image: wokImg,
     text: 'Wok',
+    categoryName: 'wok',
   },
   {
     image: drinkImg,
     text: 'Напитки',
+    categoryName: 'drink',
   },
   {
     image: snackImg,
     text: 'Закуски',
+    categoryName: 'snack',
   },
 ];

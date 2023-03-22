@@ -166,8 +166,6 @@ const images = {
 };
 
 const Image = ({ image }) => {
-  console.log(image);
-  console.log(images[image]);
   return (
     <img
       className='image'

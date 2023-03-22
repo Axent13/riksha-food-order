@@ -7,9 +7,13 @@ import './topPositions.scss';
 const TopPositions = () => {
   const products = useSelector(getProducts());
 
+  const filteredProducts = products.filter(
+    (product) => product.features && product.features.isTop
+  );
+
   return (
     <div className='top-positions'>
-      {products.map((product) => (
+      {filteredProducts.map((product) => (
         <ProductCard key={product._id} product={product} />
       ))}
     </div>

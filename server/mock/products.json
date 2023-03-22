@@ -5,7 +5,10 @@
     "components": "Тесто, белый соус, сыр моцарелла, сыр пармезан, сыр дор блю, сыр сливочный",
     "weight": "390 грамм",
     "price": "380 ₽",
-    "categories": ["pizza"]
+    "categories": ["pizza"],
+    "features": {
+      "isTop": true
+    }
   },
   {
     "title": "Белая",
@@ -88,6 +91,9 @@
     "categories": ["sushi"],
     "properties": {
       "isGrill": true
+    },
+    "features": {
+      "isTop": true
     }
   },
   {
@@ -819,7 +825,10 @@
     "components": "Филадельфия лайт, Жар лосось, Укропчик, Темпура Мясной, Темпура Окунь, Темпура Снежный краб, Балдеж , Курбекон, Грин",
     "weight": "2209 грамм",
     "price": "2190 ₽",
-    "categories": ["set"]
+    "categories": ["set"],
+    "features": {
+      "isTop": true
+    }
   },
   {
     "title": "Суши сет 36шт.",
