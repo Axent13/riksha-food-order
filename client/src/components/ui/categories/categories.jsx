@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import FoodCategoryButtonList from '../../common/foodCategory/foodCategoryButtonList';
 import ProductCard from '../productCard/productCard';
