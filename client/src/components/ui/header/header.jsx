@@ -15,7 +15,9 @@ const Header = () => {
     <header className='header'>
       <div className='header__top-part-and-logo-wrapper'>
         <div className='header__logo'>
-          <Logo />
+          <Link to='/'>
+            <Logo />
+          </Link>
         </div>
         <div className='header__up-part'>
           <Navbar />
