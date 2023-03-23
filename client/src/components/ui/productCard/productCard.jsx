@@ -5,6 +5,7 @@ import ProductProperties from './productProperties';
 import './productCard.scss';
 import Button from '../../common/button/button';
 import Image from '../../common/image/image';
+import { Link } from 'react-router-dom';
 
 const ProductCard = ({ product }) => {
   const addToCart = () => {
@@ -13,19 +14,21 @@ const ProductCard = ({ product }) => {
 
   return (
     <div className='product-card'>
-      <div className='product-card__image-with-icons'>
-        <Image image={product.image} />
-        {product.properties && (
-          <div className='product-card__properties'>
-            <ProductProperties properties={product.properties} />
-          </div>
-        )}
-        {product.features && (
-          <div className='product-card__features'>
-            <ProductFeatures features={product.features} />
-          </div>
-        )}
-      </div>
+      <Link to={`/product/${product._id}`}>
+        <div className='product-card__image-with-icons'>
+          <Image image={product.image} />
+          {product.properties && (
+            <div className='product-card__properties'>
+              <ProductProperties properties={product.properties} />
+            </div>
+          )}
+          {product.features && (
+            <div className='product-card__features'>
+              <ProductFeatures features={product.features} />
+            </div>
+          )}
+        </div>
+      </Link>
       <div className='product-card__content'>
         <div className='product-card__weight-and-kkals'>
           {product.weight && <p> {product.weight}</p>}

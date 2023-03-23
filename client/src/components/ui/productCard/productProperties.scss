@@ -1,6 +1,7 @@
 .product-properties {
   display: flex;
   flex-direction: column;
+  margin-left: 0.5rem;
 
   &__property {
     width: min-content;

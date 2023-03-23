@@ -140,8 +140,13 @@
     "kkals": "130 ккал",
     "price": "145 ₽",
     "categories": ["sushi"],
+    "features": {
+      "isTop": true,
+      "isNew": true
+    },
     "properties": {
-      "isGrill": true
+      "isGrill": true,
+      "isBranded": true
     }
   },
   {

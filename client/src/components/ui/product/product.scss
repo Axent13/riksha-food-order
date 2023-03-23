@@ -1,0 +1,94 @@
+.product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  &__image-with-icons {
+    position: relative;
+    max-width: fit-content;
+  }
+
+  &__properties {
+    position: absolute;
+    top: 0.8rem;
+    left: 0.3rem;
+  }
+
+  &__features {
+    position: absolute;
+    top: 1rem;
+    right: -0.5rem;
+  }
+
+  &__info-and-order {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-top: 0.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__weight {
+    font-family: 'TT Interfaces';
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+
+  &__weight-value {
+    font-weight: 400;
+    margin-top: 0.3rem;
+  }
+
+  &__kkals {
+    font-family: 'TT Interfaces';
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-top: 0.3rem;
+  }
+
+  &__kkals-value {
+    font-weight: 400;
+  }
+
+  &__components-title {
+    font-family: 'TT Interfaces';
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+  }
+
+  &__components {
+    font-family: 'TT Interfaces';
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin-top: 0.2rem;
+  }
+
+  &__price-and-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.7rem;
+  }
+
+  &__old-price {
+    font-size: 0.875rem;
+    color: #B7B7B7;
+    text-decoration: line-through;
+  }
+
+  &__new-price {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 0.9;
+  }
+
+  &__order-button {
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+  }
+}

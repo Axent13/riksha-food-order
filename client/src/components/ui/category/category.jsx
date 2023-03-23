@@ -12,8 +12,6 @@ const Category = ({ categoryName }) => {
     product.categories.includes(categoryName)
   );
 
-  console.log('filteredProducts', filteredProducts);
-
   return (
     <div className='category'>
       {filteredProducts.map((product) => (

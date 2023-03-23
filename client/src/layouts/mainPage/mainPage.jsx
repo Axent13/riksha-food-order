@@ -1,22 +1,22 @@
 import React from 'react';
-import Header from '../components/ui/header/header';
-import PromoSlider from '../components/common/promoSlider/promoSlider';
+import Header from '../../components/ui/header/header';
+import PromoSlider from '../../components/common/promoSlider/promoSlider';
 
-import './mainpage.scss';
-import topRollImg from '../assets/top-roll.png';
-import happyRollImg from '../assets/happy-roll.png';
-import tableRollImg from '../assets/table-roll.png';
-import messageRollImg from '../assets/message-roll.png';
-import SectionHeader from '../components/common/sectionHeader/sectionHeader';
-import TopPositions from '../components/ui/topPositions/topPositions';
-import FeaturesList from '../components/common/features/featuresList';
-import Promos from '../components/ui/promos/promos';
-import Categories from '../components/ui/categories/categories';
-import AboutCompany from '../components/ui/aboutCompany/aboutCompany';
-import InstagramBlock from '../components/ui/instagramBlock/instagramBlock';
-import Footer from '../components/ui/footer/footer';
+import './mainPage.scss';
+import topRollImg from '../../assets/top-roll.png';
+import happyRollImg from '../../assets/happy-roll.png';
+import tableRollImg from '../../assets/table-roll.png';
+import messageRollImg from '../../assets/message-roll.png';
+import SectionHeader from '../../components/common/sectionHeader/sectionHeader';
+import TopPositions from '../../components/ui/topPositions/topPositions';
+import FeaturesList from '../../components/common/features/featuresList';
+import Promos from '../../components/ui/promos/promos';
+import Categories from '../../components/ui/categories/categories';
+import AboutCompany from '../../components/ui/aboutCompany/aboutCompany';
+import InstagramBlock from '../../components/ui/instagramBlock/instagramBlock';
+import Footer from '../../components/ui/footer/footer';
 
-const Mainpage = () => {
+const MainPage = () => {
   return (
     <>
       <Header />
@@ -57,4 +57,4 @@ const Mainpage = () => {
   );
 };
 
-export default Mainpage;
+export default MainPage;
