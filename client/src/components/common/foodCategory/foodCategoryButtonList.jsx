@@ -4,17 +4,12 @@ import FoodCategoryButton from './foodCategoryButton';
 import { foodCategoryInfo } from './foodCategoryInfo';
 import Loader from '../loader/loader';
 
-const FoodCategoryButtonList = ({
-  isInHeader,
-  onClickFunction,
-  selectedCategory,
-}) => {
+const FoodCategoryButtonList = ({ onClickFunction, selectedCategory }) => {
   if (foodCategoryInfo) {
     return foodCategoryInfo.map((foodCategory, index) => (
       <FoodCategoryButton
         key={index}
         {...foodCategory}
-        isInHeader={isInHeader}
         onClickFunction={(item) => onClickFunction(item)}
         selectedCategory={selectedCategory}
         categoryName={foodCategory.categoryName}
@@ -26,7 +21,6 @@ const FoodCategoryButtonList = ({
 };
 
 FoodCategoryButtonList.propTypes = {
-  isInHeader: PropTypes.bool,
   onClickFunction: PropTypes.func,
   selectedCategory: PropTypes.string,
 };

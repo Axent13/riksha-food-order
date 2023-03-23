@@ -6,8 +6,9 @@ import messageRollImg from '../assets/message-roll.png';
 import SectionHeader from '../components/common/sectionHeader/sectionHeader';
 import AboutCompany from '../components/ui/aboutCompany/aboutCompany';
 import Footer from '../components/ui/footer/footer';
-import { Navigate, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { foodCategoryInfo } from '../components/common/foodCategory/foodCategoryInfo';
+import Category from '../components/ui/category/category';
 
 const CategoryPage = () => {
   const { categoryName } = useParams();
@@ -16,16 +17,13 @@ const CategoryPage = () => {
     (category) => category.categoryName === categoryName
   )?.text;
 
-  if (!categoryNameText) {
-    <Navigate to='/' />;
-  }
-
   return (
     <>
       <Header />
       {/* CategoryPage content */}
       <section className='category-page__content'>
         <SectionHeader text={categoryNameText} />
+        <Category categoryName={categoryName} />
       </section>
       <section className='category-page__about-company'>
         <SectionHeader text='О компании' rightCenterImg={messageRollImg} />
