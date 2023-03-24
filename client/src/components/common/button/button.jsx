@@ -10,6 +10,7 @@ const Button = ({
   isRounded = false,
   hasInstagramIcon = false,
   isUp = false,
+  isDisabled = false,
 }) => {
   return (
     <button
@@ -18,6 +19,7 @@ const Button = ({
         (isRounded ? ' button_rounded' : '') +
         (hasInstagramIcon ? ' button_with-icon' : '')
       }
+      disabled={isDisabled}
       onClick={() => onClickFunction()}
     >
       {isUp && <img className='button__arrow' src={upArrow} alt='Arrow icon' />}
@@ -46,6 +48,7 @@ Button.propTypes = {
   isRounded: PropTypes.bool,
   hasInstagramIcon: PropTypes.bool,
   isUp: PropTypes.bool,
+  isDisabled: PropTypes.bool,
 };
 
 export default Button;

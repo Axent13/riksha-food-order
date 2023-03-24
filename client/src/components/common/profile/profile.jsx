@@ -1,12 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import profileIcon from '../../../assets/profile-icon.png';
 import './profile.scss';
 
 const Profile = () => {
   return (
-    <div className='profile'>
-      <img className='profile__icon' src={profileIcon} alt='Ваш аватар' />
-    </div>
+    <Link to='/signUp'>
+      <div className='profile'>
+        <img className='profile__icon' src={profileIcon} alt='Ваш аватар' />
+      </div>
+    </Link>
   );
 };
 

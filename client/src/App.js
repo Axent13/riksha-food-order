@@ -7,6 +7,7 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 import CategoryPage from './layouts/categoryPage/categoryPage';
 import ProductPage from './layouts/productPage/productPage';
 import ScrollToTop from './components/hoc/scrollToTop';
+import AuthPage from './layouts/authPage/authPage';
 
 const App = () => {
   return (
@@ -17,7 +18,8 @@ const App = () => {
             <Route index element={<MainPage />} />
             <Route path='category/:categoryName' element={<CategoryPage />} />
             <Route path='product/:productId' element={<ProductPage />} />
-            <Route path='*' element={<Navigate to='/' />} />
+            <Route path='signUp' element={<AuthPage />} />
+            {/* <Route path='*' element={<Navigate to='/' />} /> */}
           </Routes>
         </ScrollToTop>
       </AppLoader>
