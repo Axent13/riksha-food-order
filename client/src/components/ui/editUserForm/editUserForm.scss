@@ -1,4 +1,4 @@
-.user-profile {
+.edit-user-form {
   padding: 2.5rem;
   width: 30rem;
   background: #FFFFFF;
@@ -7,14 +7,6 @@
   display: flex;
   flex-direction: column;
 
-  &__image-container {
-    text-align: center;
-  }
-
-  &__image {
-    border-radius: 0.3rem;
-  }
-
   &__title {
     font-family: 'TT Interfaces';
     font-size: 1.25rem;
@@ -22,27 +14,6 @@
     color: #1B1B1B;
     margin-bottom: 1rem;
     text-align: center;
-  }
-
-  &__data-title {
-    font-family: 'TT Interfaces';
-    font-size: 1rem;
-    font-weight: 600;
-    color: #1B1B1B;
-  }
-
-  &__data-group {
-    margin-bottom: 2rem;
-  }
-
-  &__data {
-    width: 100%;
-    margin-top: 0.2rem;
-    background: #FFFFFF;
-    font-family: 'TT Interfaces';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1rem;
   }
 
   &__button {
@@ -55,7 +26,7 @@
     color: white;
     font-size: 0.875rem;
     cursor: pointer;
-    margin-bottom: 1rem;
+    margin-bottom: 0.3rem;
 
     &:hover {
       opacity: 0.9;

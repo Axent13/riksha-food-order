@@ -65,8 +65,6 @@ const LoginForm = () => {
     const isValid = validate();
     if (!isValid) return;
 
-    console.log('data in handleSubmit', data);
-
     dispatch(login(data));
   };
 
@@ -91,6 +89,9 @@ const LoginForm = () => {
       <button type='submit' disabled={!isValid} className='login-form__button'>
         Войти
       </button>
+      <Link to='/'>
+        <button className='user-profile__button'> Назад к товарам</button>
+      </Link>
       <p>
         или{' '}
         <Link className='login-form__register-text' to='/signUp'>

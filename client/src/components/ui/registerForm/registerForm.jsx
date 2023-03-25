@@ -5,6 +5,7 @@ import { useDispatch } from 'react-redux';
 import { signUp } from '../../../store/users';
 import { Link } from 'react-router-dom';
 import './registerForm.scss';
+import CheckBoxField from '../../common/form/checkBoxField';
 
 const RegisterForm = () => {
   const dispatch = useDispatch();
@@ -12,6 +13,7 @@ const RegisterForm = () => {
     email: '',
     password: '',
     name: '',
+    isAdmin: false,
   });
 
   const [errors, setErrors] = useState({});
@@ -105,6 +107,14 @@ const RegisterForm = () => {
         onChange={handleChange}
         error={errors.password}
       />
+      <CheckBoxField
+        value={data.isAdmin}
+        onChange={handleChange}
+        name='isAdmin'
+        error={errors.isAdmin}
+      >
+        Администратор
+      </CheckBoxField>
       <button
         type='submit'
         disabled={!isValid}
