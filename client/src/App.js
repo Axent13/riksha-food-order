@@ -8,6 +8,7 @@ import CategoryPage from './layouts/categoryPage/categoryPage';
 import ProductPage from './layouts/productPage/productPage';
 import ScrollToTop from './components/hoc/scrollToTop';
 import AuthPage from './layouts/authPage/authPage';
+import RegisterPage from './components/ui/registerPage/registerPage';
 
 const App = () => {
   return (
@@ -18,7 +19,8 @@ const App = () => {
             <Route index element={<MainPage />} />
             <Route path='category/:categoryName' element={<CategoryPage />} />
             <Route path='product/:productId' element={<ProductPage />} />
-            <Route path='signUp' element={<AuthPage />} />
+            <Route path='login' element={<AuthPage />} />
+            <Route path='signUp' element={<RegisterPage />} />
             {/* <Route path='*' element={<Navigate to='/' />} /> */}
           </Routes>
         </ScrollToTop>

@@ -82,25 +82,24 @@ const authRequested = createAction('users/authRequested');
 const userUpdateFailed = createAction('users/userUpdateFailed');
 const userUpdateRequested = createAction('users/userUpdateRequested');
 
-export const login =
-  ({ payload }) =>
-  async (dispatch) => {
-    const { email, password } = payload;
-    dispatch(authRequested());
-    try {
-      const data = await authService.login({ email, password });
-      localStorageService.setTokens(data);
-      dispatch(authRequestSuccess({ userId: data.userId }));
-    } catch (error) {
-      const { code, message } = error.response.data.error;
-      if (code === 400) {
-        const errorMessage = generetaAuthError(message);
-        dispatch(authRequestFailed(errorMessage));
-      } else {
-        dispatch(authRequestFailed(error.message));
-      }
+export const login = (payload) => async (dispatch) => {
+  console.log('payload in login', payload);
+  const { email, password } = payload;
+  dispatch(authRequested());
+  try {
+    const data = await authService.login({ email, password });
+    localStorageService.setTokens(data);
+    dispatch(authRequestSuccess({ userId: data.userId }));
+  } catch (error) {
+    const { code, message } = error.response.data.error;
+    if (code === 400) {
+      const errorMessage = generetaAuthError(message);
+      dispatch(authRequestFailed(errorMessage));
+    } else {
+      dispatch(authRequestFailed(error.message));
     }
-  };
+  }
+};
 
 export const signUp = (payload) => async (dispatch) => {
   dispatch(authRequested());

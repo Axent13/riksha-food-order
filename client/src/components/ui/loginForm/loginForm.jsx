@@ -2,16 +2,15 @@ import React, { useEffect, useState } from 'react';
 import { validator } from '../../../utils/validator';
 import TextField from '../../common/form/textField';
 import { useDispatch } from 'react-redux';
-import { signUp } from '../../../store/users';
+import { login } from '../../../store/users';
 import { Link } from 'react-router-dom';
-import './registerForm.scss';
+import './loginForm.scss';
 
-const RegisterForm = () => {
+const LoginForm = () => {
   const dispatch = useDispatch();
   const [data, setData] = useState({
     email: '',
     password: '',
-    name: '',
   });
 
   const [errors, setErrors] = useState({});
@@ -30,15 +29,6 @@ const RegisterForm = () => {
       },
       isEmail: {
         message: 'Email введен некорректно',
-      },
-    },
-    name: {
-      isRequired: {
-        message: 'Имя обязательно для заполнения',
-      },
-      min: {
-        message: 'Имя должено состоять минимус из 3 символов',
-        value: 3,
       },
     },
     password: {
@@ -74,28 +64,21 @@ const RegisterForm = () => {
     e.preventDefault();
     const isValid = validate();
     if (!isValid) return;
-    const newData = {
-      ...data,
-    };
-    dispatch(signUp(newData));
+
+    console.log('data in handleSubmit', data);
+
+    dispatch(login(data));
   };
 
   return (
-    <form className='register-form' onSubmit={handleSubmit}>
-      <h2 className='register-form__title'>Регистрация</h2>
+    <form className='login-form' onSubmit={handleSubmit}>
+      <h2 className='login-form__title'>Вход</h2>
       <TextField
         label='Электронная почта'
         name='email'
         value={data.email}
         onChange={handleChange}
         error={errors.email}
-      />
-      <TextField
-        label='Имя'
-        name='name'
-        value={data.name}
-        onChange={handleChange}
-        error={errors.name}
       />
       <TextField
         label='Пароль'
@@ -105,21 +88,17 @@ const RegisterForm = () => {
         onChange={handleChange}
         error={errors.password}
       />
-      <button
-        type='submit'
-        disabled={!isValid}
-        className='register-form__button'
-      >
-        Отправить
+      <button type='submit' disabled={!isValid} className='login-form__button'>
+        Войти
       </button>
       <p>
         или{' '}
-        <Link className='login-form__register-text' to='/login'>
-          Войти
+        <Link className='login-form__register-text' to='/signUp'>
+          Зарегистрироваться
         </Link>
       </p>
     </form>
   );
 };
 
-export default RegisterForm;
+export default LoginForm;

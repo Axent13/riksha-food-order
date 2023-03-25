@@ -5,7 +5,7 @@ import './profile.scss';
 
 const Profile = () => {
   return (
-    <Link to='/signUp'>
+    <Link to='/login'>
       <div className='profile'>
         <img className='profile__icon' src={profileIcon} alt='Ваш аватар' />
       </div>
