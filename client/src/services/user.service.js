@@ -16,6 +16,11 @@ const userService = {
     const { data } = await httpService.get(
       userEndpoint + localStorageService.getUserId()
     );
+    console.log(
+      'trying to get:',
+      userEndpoint + localStorageService.getUserId()
+    );
+
     return data;
   },
   update: async (payload) => {
