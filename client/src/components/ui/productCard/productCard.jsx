@@ -6,14 +6,46 @@ import './productCard.scss';
 import Button from '../../common/button/button';
 import Image from '../../common/image/image';
 import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { getCurrentUserData } from '../../../store/users';
+import { removeProduct } from '../../../store/products';
 
 const ProductCard = ({ product }) => {
+  const userData = useSelector(getCurrentUserData());
+  const isUserAdmin = userData?.isAdmin;
+  const dispatch = useDispatch();
+
   const addToCart = () => {
     console.log(`Adding ${product.title} to Cart`);
   };
 
+  const editProduct = () => {
+    console.log('Go To EditProduct');
+  };
+
+  const deleteProduct = () => {
+    console.log('delete Product with id:', product._id);
+    dispatch(removeProduct(product._id));
+  };
+
   return (
     <div className='product-card'>
+      {isUserAdmin && (
+        <div className='product-card__admin-buttons'>
+          <Button
+            onClickFunction={() => {
+              editProduct();
+            }}
+            text='Редактировать'
+          />
+          <Button
+            onClickFunction={() => {
+              deleteProduct();
+            }}
+            text='Удалить'
+          />
+        </div>
+      )}
       <Link to={`/product/${product._id}`}>
         <div className='product-card__image-with-icons'>
           <Image image={product.image} />
