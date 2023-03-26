@@ -11,24 +11,27 @@ import AuthPage from './layouts/authPage/authPage';
 import RegisterPage from './components/ui/registerPage/registerPage';
 import EditUserPage from './components/ui/editUserPage/editUserPage';
 import CreateProductPage from './layouts/createProductPage/createProductPage';
+import UserLoader from './components/hoc/userLoader';
 
 const App = () => {
   return (
     <>
       <AppLoader>
-        <ScrollToTop>
-          <Routes>
-            <Route index element={<MainPage />} />
-            <Route path='category/:categoryName' element={<CategoryPage />} />
-            <Route path='product/create' element={<CreateProductPage />} />
-            <Route path='product/:productId' element={<ProductPage />} />
-            <Route path='login' element={<AuthPage />} />
-            <Route path='signUp' element={<RegisterPage />} />
-            <Route path='editUserProfile' element={<EditUserPage />} />
+        <UserLoader>
+          <ScrollToTop>
+            <Routes>
+              <Route index element={<MainPage />} />
+              <Route path='category/:categoryName' element={<CategoryPage />} />
+              <Route path='product/create' element={<CreateProductPage />} />
+              <Route path='product/:productId' element={<ProductPage />} />
+              <Route path='login' element={<AuthPage />} />
+              <Route path='signUp' element={<RegisterPage />} />
+              <Route path='editUserProfile' element={<EditUserPage />} />
 
-            {/* <Route path='*' element={<Navigate to='/' />} /> */}
-          </Routes>
-        </ScrollToTop>
+              {/* <Route path='*' element={<Navigate to='/' />} /> */}
+            </Routes>
+          </ScrollToTop>
+        </UserLoader>
       </AppLoader>
     </>
   );

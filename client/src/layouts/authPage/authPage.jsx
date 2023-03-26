@@ -1,7 +1,6 @@
 /* eslint-disable multiline-ternary */
 import React from 'react';
 import { useSelector } from 'react-redux';
-import UserLoader from '../../components/hoc/userLoader';
 import LoginForm from '../../components/ui/loginForm/loginForm';
 import UserProfile from '../../components/ui/userProfile/userProfile';
 import { getCurrentUserId } from '../../store/users';
@@ -9,16 +8,11 @@ import './authPage.scss';
 
 const AuthPage = () => {
   const currentUserId = useSelector(getCurrentUserId());
+  console.log('currid:', currentUserId);
 
   return (
     <div className='auth-page'>
-      {currentUserId ? (
-        <UserLoader>
-          <UserProfile />
-        </UserLoader>
-      ) : (
-        <LoginForm />
-      )}
+      {currentUserId ? <UserProfile /> : <LoginForm />}
     </div>
   );
 };
