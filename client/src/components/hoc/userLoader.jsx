@@ -1,11 +1,10 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import {
   getDataStatus,
   getIsLoggedIn,
   loadCurrentUserData,
 } from '../../store/users';
-import Loader from '../common/loader/loader';
 import { useDispatch, useSelector } from 'react-redux';
 
 const UserLoader = ({ children }) => {
@@ -14,10 +13,7 @@ const UserLoader = ({ children }) => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    console.log('in UserLoader UseEffect');
     if (isLoggedIn && !dataStatus) {
-      console.log('Now wiil be try to loadCurrentUserdata');
-
       dispatch(loadCurrentUserData());
     }
   }, [isLoggedIn, dataStatus]);

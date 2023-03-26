@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { getCurrentUserData } from '../../../store/users';
 import { removeProduct } from '../../../store/products';
+import { addCartItem } from '../../../store/cart';
 
 const ProductCard = ({ product }) => {
   const userData = useSelector(getCurrentUserData());
@@ -16,7 +17,7 @@ const ProductCard = ({ product }) => {
   const dispatch = useDispatch();
 
   const addToCart = () => {
-    console.log(`Adding ${product.title} to Cart`);
+    dispatch(addCartItem(product));
   };
 
   const createProduct = () => {
@@ -31,7 +32,7 @@ const ProductCard = ({ product }) => {
     <div className='product-card'>
       {isUserAdmin && (
         <div className='product-card__admin-buttons'>
-          <Link to='product/create'>
+          <Link to='/product/create'>
             <Button
               onClickFunction={() => {
                 createProduct();

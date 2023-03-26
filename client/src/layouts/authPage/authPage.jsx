@@ -8,7 +8,6 @@ import './authPage.scss';
 
 const AuthPage = () => {
   const currentUserId = useSelector(getCurrentUserId());
-  console.log('currid:', currentUserId);
 
   return (
     <div className='auth-page'>

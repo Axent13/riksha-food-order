@@ -1,6 +1,7 @@
 import { createAction, createSlice } from '@reduxjs/toolkit';
 import productService from '../services/product.service';
 import isOutdated from '../utils/isOutdated';
+import history from '../utils/history';
 
 const productsSlice = createSlice({
   name: 'products',
@@ -75,6 +76,7 @@ export const createProduct = (payload) => async (dispatch) => {
   try {
     const { content } = await productService.createProduct(payload);
     dispatch(productCreated(content));
+    history.back();
   } catch (error) {
     dispatch(productsRequestFailed(error.message));
   }

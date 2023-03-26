@@ -12,6 +12,7 @@ import RegisterPage from './components/ui/registerPage/registerPage';
 import EditUserPage from './components/ui/editUserPage/editUserPage';
 import CreateProductPage from './layouts/createProductPage/createProductPage';
 import UserLoader from './components/hoc/userLoader';
+import CartItems from './layouts/cartItems/cartItems';
 
 const App = () => {
   return (
@@ -24,11 +25,12 @@ const App = () => {
               <Route path='category/:categoryName' element={<CategoryPage />} />
               <Route path='product/create' element={<CreateProductPage />} />
               <Route path='product/:productId' element={<ProductPage />} />
+              <Route path='cart' element={<CartItems />} />
               <Route path='login' element={<AuthPage />} />
               <Route path='signUp' element={<RegisterPage />} />
               <Route path='editUserProfile' element={<EditUserPage />} />
 
-              {/* <Route path='*' element={<Navigate to='/' />} /> */}
+              <Route path='*' element={<Navigate to='/' />} />
             </Routes>
           </ScrollToTop>
         </UserLoader>

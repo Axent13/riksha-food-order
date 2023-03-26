@@ -1,12 +1,29 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
 import cartIcon from '../../../assets/shopping-cart.png';
+import { getCartItems } from '../../../store/cart';
 import './cart.scss';
 
-const Cart = ({ cartPrice, cartCountItems }) => {
+const Cart = () => {
+  const cartItems = useSelector(getCartItems());
+  const [cartPrice, setCartPrice] = useState();
+  const [cartCountItems, setCartCountItems] = useState();
+
+  useEffect(() => {
+    if (cartItems.length !== 0) {
+      setCartPrice(
+        cartItems.reduce(
+          (sum, item) => sum + parseInt(item.price.slice(0, -2)),
+          0
+        )
+      );
+      setCartCountItems(cartItems.length);
+    }
+  }, [cartItems.length]);
+
   return (
     <div className='cart'>
-      <div className='cart__price'>{cartPrice ?? 0} ₽</div>
+      <div className='cart__price'>{cartPrice ? `${cartPrice} ₽` : '0 ₽'}</div>
       <div className='cart__delimiter'></div>
       <div className='cart__icon-and-items'>
         <img className='cart__icon' src={cartIcon} />
@@ -14,11 +31,6 @@ const Cart = ({ cartPrice, cartCountItems }) => {
       </div>
     </div>
   );
-};
-
-Cart.propTypes = {
-  cartPrice: PropTypes.number,
-  cartCountItems: PropTypes.number,
 };
 
 export default Cart;

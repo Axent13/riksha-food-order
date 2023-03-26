@@ -22,7 +22,9 @@ const Header = () => {
         <div className='header__up-part'>
           <Navbar />
           <PhoneNumber />
-          <Cart />
+          <Link to='/cart'>
+            <Cart />
+          </Link>
           <Profile />
         </div>
       </div>

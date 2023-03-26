@@ -28,8 +28,6 @@ const UserProfile = () => {
   }, [dataStatus]);
 
   const data = useSelector(getCurrentUserData());
-  console.log('userdata in UserProfile', userData);
-  console.log('data in UserProfile', data);
 
   const dispatch = useDispatch();
 

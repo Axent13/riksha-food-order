@@ -8,7 +8,6 @@ const productService = {
     return req.data;
   },
   createProduct: async (payload) => {
-    console.log('In service. payload is:', payload);
     const { data } = await httpService.post(productEndpoint, payload);
     return data;
   },

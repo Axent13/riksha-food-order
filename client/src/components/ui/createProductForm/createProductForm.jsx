@@ -66,7 +66,7 @@ const CreateProductFrom = () => {
     const newProduct = {
       ...data,
     };
-    console.log('newProduct in form: ', newProduct);
+
     dispatch(createProduct(newProduct));
   };
 

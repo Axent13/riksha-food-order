@@ -113,7 +113,6 @@ export const signUp = (payload) => async (dispatch) => {
 export const logOut = () => (dispatch) => {
   localStorageService.removeAuthData();
   dispatch(userLoggedOut());
-  // history.push('/');
 };
 
 export const loadCurrentUserData = () => async (dispatch) => {
@@ -130,7 +129,6 @@ export const updateUser = (payload) => async (dispatch) => {
   dispatch(userUpdateRequested());
   try {
     const { content } = await userService.update(payload);
-    console.log(content);
     dispatch(userUpdateSuccessed(content));
     history.back();
   } catch (error) {
