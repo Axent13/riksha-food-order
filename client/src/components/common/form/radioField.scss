@@ -1,0 +1,24 @@
+.radio-field {
+  &__title {
+    font-family: 'TT Interfaces';
+    font-size: 1rem;
+    font-weight: normal;
+    color: #1B1B1B;
+  }
+
+  &__label {
+      font-family: 'TT Interfaces';
+      font-size: 1rem;
+      font-weight: normal;
+      color: #1B1B1B;
+      padding-left: 0.3rem;
+  }
+
+  &__input-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+  }
+}

@@ -16,8 +16,8 @@ router.get("/", async (req, res) => {
 });
 
 router.post("/", auth, async (req, res) => {
+  console.log("Trying to create Product with req.body:", req.body);
   try {
-    console.log("Trying to create Product with req.body:", ...req.body);
     const newProduct = await Product.create({
       ...req.body,
     });

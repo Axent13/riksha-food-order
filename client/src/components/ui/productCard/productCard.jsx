@@ -19,12 +19,11 @@ const ProductCard = ({ product }) => {
     console.log(`Adding ${product.title} to Cart`);
   };
 
-  const editProduct = () => {
-    console.log('Go To EditProduct');
+  const createProduct = () => {
+    console.log('Go To Create Product');
   };
 
   const deleteProduct = () => {
-    console.log('delete Product with id:', product._id);
     dispatch(removeProduct(product._id));
   };
 
@@ -32,12 +31,14 @@ const ProductCard = ({ product }) => {
     <div className='product-card'>
       {isUserAdmin && (
         <div className='product-card__admin-buttons'>
-          <Button
-            onClickFunction={() => {
-              editProduct();
-            }}
-            text='Редактировать'
-          />
+          <Link to='product/create'>
+            <Button
+              onClickFunction={() => {
+                createProduct();
+              }}
+              text='Добавить'
+            />
+          </Link>
           <Button
             onClickFunction={() => {
               deleteProduct();
