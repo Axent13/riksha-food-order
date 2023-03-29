@@ -2,15 +2,22 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './radioField.scss';
 
-const RadioField = ({ options, name, onChange, value, label }) => {
+const RadioField = ({ options, name, onChange, value, label, error }) => {
   const handleChange = ({ target }) => {
     onChange({ name: target.name, value: target.value });
+  };
+
+  const getClasses = () => {
+    return (
+      'radio-field__input-group' +
+      (error ? ' radio-field__input-group_invalid' : '')
+    );
   };
 
   return (
     <div className='radio-field'>
       <label className='radio-field__title'>{label}</label>
-      <div className='radio-field__input-group'>
+      <div className={getClasses()}>
         {options.map((option) => (
           <div key={option.name + '_' + option.value}>
             <input
@@ -31,6 +38,7 @@ const RadioField = ({ options, name, onChange, value, label }) => {
           </div>
         ))}
       </div>
+      {error && <div className='invalid-feedback '>{error}</div>}
     </div>
   );
 };
@@ -41,6 +49,7 @@ RadioField.propTypes = {
   onChange: PropTypes.func,
   value: PropTypes.string,
   label: PropTypes.string,
+  error: PropTypes.string,
 };
 
 export default RadioField;
