@@ -29,7 +29,7 @@ const CartItems = () => {
                 <div className='cart-items__group'>
                   <p className='cart-items__title'>Стоимость</p>
                   <p className='cart-items__content cart-items__content_right'>
-                    {item.price}
+                    {item.price} ₽
                   </p>
                 </div>
               </div>
