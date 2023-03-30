@@ -8,15 +8,24 @@ import AboutCompany from '../../components/ui/aboutCompany/aboutCompany';
 import Footer from '../../components/ui/footer/footer';
 import { useParams } from 'react-router-dom';
 import Product from '../../components/ui/product/product';
+import BackToCatalogButton from '../../components/common/BackToCatalogButton/BackToCatalogButton';
+import { useSelector } from 'react-redux';
+import { getProductById } from '../../store/products';
 
 const ProductPage = () => {
   const { productId } = useParams();
+  const productData = useSelector(getProductById(productId));
+  const categoryName = productData?.categories[0];
 
   return (
     <>
       <Header />
       {/* ProductPage content */}
-      <section className='product-page__content'>
+      <section className='product-page__back-button'>
+        <BackToCatalogButton categoryName={categoryName} />
+      </section>
+      <hr className='product-page__delimiter' />
+      <section className='product-page__product'>
         <Product productId={productId} />
       </section>
       <section className='product-page__about-company'>
