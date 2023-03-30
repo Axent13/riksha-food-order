@@ -35,9 +35,31 @@ const CreateProductFrom = () => {
         message: 'Наименование обязательно для заполнения',
       },
     },
+    weight: {
+      isNumber: {
+        message: 'Вес должен быть числом',
+      },
+      isNotPositiveNumber: {
+        message: 'Вес должен быть больше нуля',
+      },
+    },
+    kkals: {
+      isNumber: {
+        message: 'Каллории должны быть числом',
+      },
+      isNotPositiveNumber: {
+        message: 'Каллории должны быть больше нуля',
+      },
+    },
     price: {
       isRequired: {
         message: 'Цена обязательна для заполнения',
+      },
+      isNumber: {
+        message: 'Цена должна быть числом',
+      },
+      isNotPositiveNumber: {
+        message: 'Цена должна быть больше нуля',
       },
     },
     categories: {
@@ -133,6 +155,7 @@ const CreateProductFrom = () => {
         name='categories'
         onChange={handleChange}
         label='Выберите категорию'
+        error={errors.categories}
       />
       <button
         type='submit'

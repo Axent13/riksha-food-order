@@ -31,6 +31,16 @@ export function validator(data, config) {
         statusValidate = data.length < config.value;
         break;
       }
+      case 'isNumber': {
+        statusValidate = isNaN(data);
+        break;
+      }
+      case 'isNotPositiveNumber': {
+        if (data.length !== 0) {
+          statusValidate = data <= 0;
+        }
+        break;
+      }
       default:
         break;
     }

@@ -13,16 +13,16 @@ const schema = new Schema(
       type: String,
     },
     weight: {
-      type: String,
+      type: Number,
     },
     kkals: {
-      type: String,
+      type: Number,
     },
     oldPrice: {
-      type: String,
+      type: Number,
     },
     price: {
-      type: String,
+      type: Number,
       required: true,
     },
     categories: {
