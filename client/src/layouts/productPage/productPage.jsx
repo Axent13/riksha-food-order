@@ -8,7 +8,7 @@ import AboutCompany from '../../components/ui/aboutCompany/aboutCompany';
 import Footer from '../../components/ui/footer/footer';
 import { useParams } from 'react-router-dom';
 import Product from '../../components/ui/product/product';
-import BackToCatalogButton from '../../components/common/BackToCatalogButton/BackToCatalogButton';
+import BackToCatalogButton from '../../components/common/backToCatalogButton/backToCatalogButton';
 import { useSelector } from 'react-redux';
 import { getProductById } from '../../store/products';
 

@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import './BackToCatalogButton.scss';
+import './backToCatalogButton.scss';
+
 const BackToCatalogButton = ({ categoryName }) => {
   return (
     <Link className='back-to-catalog-button' to={`/category/${categoryName}`}>
