@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { getProductById } from '../../../store/products';
 
 import './product.scss';
@@ -9,12 +9,14 @@ import Image from '../../common/image/image';
 import ProductFeatures from '../productCard/productFeatures';
 import ProductProperties from '../productCard/productProperties';
 import Button from '../../common/button/button';
+import { addCartItem } from '../../../store/cart';
 
 const Product = ({ productId }) => {
   const product = useSelector(getProductById(productId));
+  const dispatch = useDispatch();
 
   const addToCart = () => {
-    console.log(`Adding ${product.title} to Cart`);
+    dispatch(addCartItem(product));
   };
 
   return (
