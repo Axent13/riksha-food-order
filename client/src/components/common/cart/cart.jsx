@@ -11,12 +11,7 @@ const Cart = () => {
 
   useEffect(() => {
     if (cartItems.length !== 0) {
-      setCartPrice(
-        cartItems.reduce(
-          (sum, item) => sum + parseInt(item.price.slice(0, -2)),
-          0
-        )
-      );
+      setCartPrice(cartItems.reduce((sum, item) => sum + item.price, 0));
       setCartCountItems(cartItems.length);
     }
   }, [cartItems.length]);

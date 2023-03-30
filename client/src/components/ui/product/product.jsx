@@ -38,13 +38,17 @@ const Product = ({ productId }) => {
           {product.weight && (
             <p className='product__weight'>
               Вес:{' '}
-              <span className='product__weight-value'>{product.weight}</span>
+              <span className='product__weight-value'>
+                {product.weight} грамм
+              </span>
             </p>
           )}
           {product.kkals && (
             <p className='product__kkals'>
               Калорийность:
-              <span className='product__weight-value'>{product.kkals}</span>
+              <span className='product__weight-value'>
+                {product.kkals} ккал
+              </span>
             </p>
           )}
           <p className='product__components-title'>Состав:</p>
@@ -52,8 +56,10 @@ const Product = ({ productId }) => {
         </div>
         <div className='product__price-and-button'>
           <div className='product__prices'>
-            <p className='product__old-price'>{product.oldPrice}</p>
-            <p className='product__new-price'>{product.price}</p>
+            <p className='product__old-price'>
+              {product.oldPrice && `${product.oldPrice} ₽`}
+            </p>
+            <p className='product__new-price'>{product.price} ₽</p>
           </div>
           <div className='product__order-button'>
             <Button onClickFunction={addToCart} text='Заказать' />

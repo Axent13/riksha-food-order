@@ -65,11 +65,11 @@ const ProductCard = ({ product }) => {
       </Link>
       <div className='product-card__content'>
         <div className='product-card__weight-and-kkals'>
-          {product.weight && <p> {product.weight}</p>}
+          {product.weight && <p> {product.weight} грамм</p>}
           {product.weight && product.kkals && (
             <div className='product-card__separator'></div>
           )}
-          {product.kkals && <p>{product.kkals}</p>}
+          {product.kkals && <p>{product.kkals} ккал</p>}
         </div>
         <div className='product-card__title-and-components'>
           <p className='product-card__title'>{product.title}</p>
@@ -77,8 +77,10 @@ const ProductCard = ({ product }) => {
         </div>
         <div className='product-card__price-and-button'>
           <div className='product-card__prices'>
-            <p className='product-card__old-price'>{product.oldPrice}</p>
-            <p className='product-card__new-price'>{product.price}</p>
+            <p className='product-card__old-price'>
+              {product.oldPrice && `${product.oldPrice} ₽`}
+            </p>
+            <p className='product-card__new-price'>{product.price} ₽</p>
           </div>
           <div className='product-card__order-button'>
             <Button onClickFunction={addToCart} text='Заказать' />
