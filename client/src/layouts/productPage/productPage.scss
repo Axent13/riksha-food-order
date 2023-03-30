@@ -1,5 +1,17 @@
 .product-page {
-  &__content {
+  &__back-button {
+    max-width: 78.375rem;
+    margin: 2rem auto;
+  }
+
+  &__delimiter {
+    height: 0.063rem;
+    background-color: #E2E1E1;
+    max-width: 78.375rem;
+    margin: 0 auto;
+  }
+
+  &__product {
     max-width: 78.375rem;
     margin: 3rem auto 0;
   }
