@@ -51,6 +51,14 @@ const CreateProductFrom = () => {
         message: 'Каллории должны быть больше нуля',
       },
     },
+    oldPrice: {
+      isNumber: {
+        message: 'Старая цена должна быть числом',
+      },
+      isNotPositiveNumber: {
+        message: 'Старая цена должна быть больше нуля',
+      },
+    },
     price: {
       isRequired: {
         message: 'Цена обязательна для заполнения',
