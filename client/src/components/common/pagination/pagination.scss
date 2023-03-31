@@ -1,0 +1,55 @@
+.pagination {
+  display: flex;
+  list-style: none;
+
+  &__arrow-button {
+    background: url('../../../assets/arrow-back-to-catalog.png') no-repeat center;
+    width: 3.5rem;
+    height: 3.5rem;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &_next {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__page-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      opacity: 0.7;
+      background: url('../../../assets/pagination-elipse.png') no-repeat center;
+    }
+
+    &_active {
+      background: url('../../../assets/pagination-elipse.png') no-repeat center;
+    }
+  }
+
+  &__page-button {
+    width: 3.5rem;
+    height: 3.5rem;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-family: 'TT Interfaces';
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: #1b1b1b;
+
+    &_active {
+      font-family: 'TT Interfaces';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.25rem;
+      color: #C95C3F;
+    }
+  }
+}
