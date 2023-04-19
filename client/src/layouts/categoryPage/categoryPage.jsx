@@ -9,6 +9,7 @@ import Footer from '../../components/ui/footer/footer';
 import { useParams } from 'react-router-dom';
 import { foodCategoryInfo } from '../../components/common/foodCategory/foodCategoryInfo';
 import Category from '../../components/ui/category/category';
+import Dropdown from '../../components/common/form/dropdown/dropdown';
 
 const CategoryPage = () => {
   const { categoryName } = useParams();
@@ -17,12 +18,23 @@ const CategoryPage = () => {
     (category) => category.categoryName === categoryName
   )?.text;
 
+  const dropdownOptions = [
+    'По умолчанию',
+    'Название (А - Я)',
+    'Название (Я - А)',
+    'Цена (низкая > высокая)',
+    'Цена (высокая > низкая)',
+  ];
+
   return (
     <>
       <Header />
       {/* CategoryPage content */}
       <section className='category-page__content'>
         <SectionHeader text={categoryNameText} />
+        <div className='category-page__dropdown'>
+          <Dropdown options={dropdownOptions} displayedName='Сортировка' />
+        </div>
         <Category categoryName={categoryName} />
       </section>
       <section className='category-page__about-company'>

@@ -1,0 +1,53 @@
+.dropdown {
+  font-family: 'TT Interfaces';
+  font-weight: 500;
+  font-size: 0.825rem;
+  color: #1B1B1B;
+
+  &__name {
+    color: #B7B7B7;
+  }
+
+  &__selected-value {
+    border: 1px solid #E2E1E1;
+    border-radius: 0.5rem;
+    padding: 1rem 1.25rem;
+    user-select: none;
+    cursor: pointer;
+
+    &_opened {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+
+  &__options {
+    display: none;
+
+    &_opened {
+      display: block;
+    }
+  }
+
+  &__option {
+    border: 1px solid #E2E1E1;
+    border-top: none;
+    padding: 1rem 1.25rem;
+    background-color: #FCFCFC;
+    user-select: none;
+    cursor: pointer;
+
+    &:last-child {
+      border-bottom-left-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem;
+    }
+
+    &_selected {
+      background-color: #F5F5F5;
+    }
+
+    &:hover {
+      background-color: #e7e7e7;
+    }
+  }
+}
