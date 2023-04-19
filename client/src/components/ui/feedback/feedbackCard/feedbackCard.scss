@@ -1,0 +1,45 @@
+.feedback-card {
+  border-top: 1px solid #e2e1e1;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  padding: 2.625rem 0.5rem;
+
+  &:last-child {
+    border-bottom: 1px solid #e2e1e1;
+  }
+
+  &__user-and-date {
+    display: flex;
+  }
+
+  &__name-and-date {
+    margin-left: 0.75rem;
+  }
+
+  &__name {
+    font-family: 'TT Interfaces';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+  }
+
+  &__rate-and-text-and-image {
+    display: flex;
+  }
+
+  &__rate {
+    margin-bottom: 0.75rem;
+  }
+
+  &__text {
+    font-family: 'TT Interfaces';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
+  &__image-container {
+    margin-left: 2rem;
+  }
+}
