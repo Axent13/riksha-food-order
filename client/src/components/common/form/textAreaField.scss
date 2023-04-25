@@ -1,0 +1,23 @@
+.text-area-field {
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #E2E1E1;
+  border-radius: 0.25rem;
+  resize: none;
+  font-family: 'TT Interfaces';
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #1B1B1B;
+  padding: 1rem 0.75rem;
+
+  &_errored {
+    border: 2px solid #fc7f7f;
+  }
+
+  &__error {
+    font-family: 'TT Interfaces';
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #fc7f7f;
+  }
+}

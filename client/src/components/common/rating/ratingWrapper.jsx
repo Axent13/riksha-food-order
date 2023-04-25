@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './ratingWrapper.scss';
 import Rating from '@mui/material/Rating';
 
-const RatingWrapper = ({ rate = 0, isFrozen = true }) => {
+const RatingWrapper = ({ rate, isFrozen = true, onRatingClick }) => {
   const [value, setValue] = useState(rate);
 
   return (
@@ -13,6 +13,7 @@ const RatingWrapper = ({ rate = 0, isFrozen = true }) => {
         readOnly={isFrozen}
         onChange={(event, newValue) => {
           setValue(newValue);
+          onRatingClick(newValue);
         }}
       />
     </div>
@@ -22,6 +23,7 @@ const RatingWrapper = ({ rate = 0, isFrozen = true }) => {
 RatingWrapper.propTypes = {
   rate: PropTypes.number,
   isFrozen: PropTypes.bool,
+  onRatingClick: PropTypes.func,
 };
 
 export default RatingWrapper;

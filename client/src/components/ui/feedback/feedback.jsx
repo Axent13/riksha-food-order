@@ -19,7 +19,7 @@ const gettedFeedbacks = [
     image: image1,
   },
   {
-    id: 456,
+    _id: 456,
     userAvatar: userAvatar2,
     userName: 'Марина Жук',
     date: '20.01.2022',

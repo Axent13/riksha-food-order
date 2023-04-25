@@ -12,9 +12,16 @@ const FeedbackBlock = () => {
     setIsModalShown(true);
   };
 
+  const handleCloseButtonClick = () => {
+    setIsModalShown(false);
+  };
+
   return (
     <div className='feedback-block'>
-      {isModalShown && <FeedbackModal />}
+      <FeedbackModal
+        isShown={isModalShown}
+        onCloseButtonClick={handleCloseButtonClick}
+      />
       <div className='feedback-block__text-and-subtext-and-image'>
         <div className='feedback-block__text-and-subtext'>
           <p className='feedback-block__text'>Заказывали уже у нас?</p>
