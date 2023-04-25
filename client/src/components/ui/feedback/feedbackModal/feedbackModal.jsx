@@ -6,16 +6,21 @@ import { validator } from '../../../../utils/validator';
 import RatingWrapper from '../../../common/rating/ratingWrapper';
 import TextAreaField from '../../../common/form/textAreaField';
 import TextField from '../../../common/form/textField';
+import { useDispatch } from 'react-redux';
+import { addFeedback } from '../../../../store/feedbacks';
 
 const FeedbackModal = ({ isShown = false, onCloseButtonClick }) => {
-  const [data, setData] = useState({
+  const initialData = {
     message: '',
     phone: '',
     name: '',
     rate: null,
-  });
+  };
+
+  const [data, setData] = useState(initialData);
 
   const [errors, setErrors] = useState({});
+  const dispatch = useDispatch();
 
   const handleChange = (target) => {
     setData((prevState) => ({
@@ -66,9 +71,16 @@ const FeedbackModal = ({ isShown = false, onCloseButtonClick }) => {
     const isValid = validate();
     if (!isValid) return;
 
-    console.log('Trying to send feedback from Front:', data);
+    const transformedData = {
+      ...data,
+      rate: data.rate || 0,
+      date: new Date(),
+    };
 
-    // const { content } = await telegramService.sendMessage(data);
+    await dispatch(addFeedback({ ...transformedData }));
+    onCloseButtonClick();
+
+    setData(initialData);
   };
 
   return (
