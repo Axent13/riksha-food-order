@@ -22,6 +22,7 @@
 
   &__links {
     display: flex;
+    list-style: none;
   }
 
   &__link-container {
@@ -45,6 +46,7 @@
     margin-left: 0.2rem;
     display: flex;
     align-items: center;
+    list-style: none;
   }
 
   &__social-link-container {
@@ -64,6 +66,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     width: 28rem;
     height: 5rem;
+    list-style: none;
   }
 
   &__category-link {
