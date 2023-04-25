@@ -107,14 +107,6 @@ const RegisterForm = () => {
         onChange={handleChange}
         error={errors.password}
       />
-      <CheckBoxField
-        value={data.isAdmin}
-        onChange={handleChange}
-        name='isAdmin'
-        error={errors.isAdmin}
-      >
-        Администратор
-      </CheckBoxField>
       <button
         type='submit'
         disabled={!isValid}
