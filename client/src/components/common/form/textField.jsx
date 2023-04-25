@@ -2,7 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './textField.scss';
 
-const TextField = ({ label, type = 'text', name, value, onChange, error }) => {
+const TextField = ({
+  label,
+  type = 'text',
+  name,
+  value,
+  onChange,
+  error,
+  placeholder,
+}) => {
   const handleChange = ({ target }) => {
     onChange({ name: target.name, value: target.value });
   };
@@ -24,6 +32,7 @@ const TextField = ({ label, type = 'text', name, value, onChange, error }) => {
           value={value}
           onChange={handleChange}
           className={getInputClasses()}
+          placeholder={placeholder}
         />
         {error && <div className='invalid-feedback '>{error}</div>}
       </div>
@@ -33,6 +42,7 @@ const TextField = ({ label, type = 'text', name, value, onChange, error }) => {
 
 TextField.defaultProps = {
   type: 'text',
+  placeholder: '',
 };
 
 TextField.propTypes = {
@@ -42,6 +52,7 @@ TextField.propTypes = {
   value: PropTypes.string,
   onChange: PropTypes.func,
   error: PropTypes.string,
+  placeholder: PropTypes.string,
 };
 
 export default TextField;

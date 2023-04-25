@@ -1,4 +1,5 @@
 import cartReducer from './cart';
+import feedbacksReducer from './feedbacks';
 import productsReducer from './products';
 import usersReducer from './users';
 
@@ -8,6 +9,7 @@ const rootReducer = combineReducers({
   products: productsReducer,
   users: usersReducer,
   cart: cartReducer,
+  feedbacks: feedbacksReducer,
 });
 
 export function createStore() {

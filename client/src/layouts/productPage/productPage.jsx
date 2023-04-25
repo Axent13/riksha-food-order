@@ -11,6 +11,7 @@ import Product from '../../components/ui/product/product';
 import BackToCatalogButton from '../../components/common/backToCatalogButton/backToCatalogButton';
 import { useSelector } from 'react-redux';
 import { getProductById } from '../../store/products';
+import Feedback from '../../components/ui/feedback/feedback';
 
 const ProductPage = () => {
   const { productId } = useParams();
@@ -28,9 +29,8 @@ const ProductPage = () => {
       <section className='product-page__product'>
         <Product productId={productId} />
       </section>
-      <section className='product-page__about-company'>
-        <SectionHeader text='О компании' rightCenterImg={messageRollImg} />
-        <AboutCompany />
+      <section className='product-page__feedback'>
+        <Feedback />
       </section>
       <section className='product-page__footer'>
         <Footer />
