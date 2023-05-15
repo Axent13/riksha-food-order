@@ -1,8 +1,12 @@
 .product-card {
-  width: 24.5rem;
+  width: 15rem;
   height: 30rem;
   background-color: white;
   position: relative;
+
+  @media (min-width: 640px) {
+    width: 24.5rem;
+  }
 
   &__admin-buttons {
     position: absolute;
@@ -66,19 +70,31 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 0.7rem;
+    margin-top: 1rem;
+    flex-direction: column;
+
+    @media (min-width: 640px) {
+      margin-top: 0.7rem;
+      flex-direction: row;
+    }
   }
 
   &__old-price {
     font-size: 0.875rem;
     color: #B7B7B7;
     text-decoration: line-through;
+    white-space: nowrap;
   }
 
   &__new-price {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     line-height: 0.9;
+    white-space: nowrap;
+
+    @media (min-width:425px) {
+      font-size: 2rem;
+    }
   }
 
   &__order-button {

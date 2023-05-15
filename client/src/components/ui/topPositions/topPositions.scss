@@ -1,6 +1,17 @@
 .top-positions {
   display: grid;
-  grid-gap: 0.4rem;
-  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  justify-items: center;
   padding: 2.5rem 0 0 1rem;
+
+  @media (min-width: 425px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: 1080px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: initial;
+    gap: 0.4rem;
+  }
 }

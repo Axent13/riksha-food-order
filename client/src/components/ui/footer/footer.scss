@@ -7,17 +7,45 @@
     max-width: 78.375rem;
     margin: 0 auto;
     display: flex;
+    flex-direction: column;
+
+    @media (min-width: 1024px) {
+      flex-direction: row;
+    }
   }
 
   &__logo {
     position: absolute;
-    top: -2.5rem;
-    left: 1rem;
+    top: -4rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media (min-width: 1024px) {
+      top: -2.5rem;
+      left: 1rem;
+      transform: none;
+    }
   }
 
   &__links-and-socials {
-    margin-left: 11.4rem;
-    margin-top: 2rem;
+    margin-top: 9rem;
+    margin-left: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media (min-width: 425px) {
+      margin-top: 7rem;
+      flex-direction: row;
+      align-items: baseline;
+    }
+
+    @media (min-width: 1024px) {
+      display: block;
+      margin-left: 11.4rem;
+      margin-top: 2rem;
+    }
   }
 
   &__links {
@@ -35,6 +63,7 @@
     font-size: 0.875rem;
     color: #FFFFFF;
     text-decoration: none;
+    white-space: nowrap;
 
     &:hover {
       color: #d4d4d4;
@@ -60,13 +89,24 @@
   }
 
   &__categories {
-    margin-top: 2rem;
-    margin-left: 3.1rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    width: 28rem;
-    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem auto 0;
+    width: 90%;
     list-style: none;
+
+    @media (min-width: 510px) {
+      width: 40rem;
+    }
+
+    @media (min-width: 1024px) {
+      margin-top: 2rem;
+      margin-left: 3.1rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      width: 28rem;
+      height: 5rem;
+    }
   }
 
   &__category-link {
@@ -82,8 +122,23 @@
   }
 
   &__phone-and-copyright {
-    margin-top: 2rem;
-    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem auto 0;
+    flex-direction: column;
+
+    @media (min-width: 510px) {
+      align-items: baseline;
+      flex-direction: row;
+      width: 40rem;
+    }
+
+    @media (min-width: 1024px) {
+      width: initial;
+      display: block;
+      margin: 2rem 1rem 0 auto;
+    }
   }
 
   &__phone-link {
@@ -93,6 +148,7 @@
     color: #FFFFFF;
     text-decoration: none;
     text-align: right;
+    white-space: nowrap;
   }
 
   &__working-time {

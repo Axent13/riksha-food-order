@@ -8,7 +8,11 @@
   cursor: pointer;
   border-radius: 0.75rem;
   height: 3.75rem;
-  padding: 1.25rem;
+  padding: 0;
+
+  @media (min-width: 1080px) {
+    padding: 1.25rem;
+  }
 
   &:hover {
     background-color: #dd5631;

@@ -40,7 +40,9 @@ const MainPage = () => {
         <Promos />
       </section>
       <section className='mainpage__categories'>
-        <SectionHeader text='Категории' rightCenterImg={tableRollImg} />
+        <div className='mainpage__categories-section-header'>
+          <SectionHeader text='Категории' rightCenterImg={tableRollImg} />
+        </div>
         <Categories />
       </section>
       <section className='mainpage__about-company'>

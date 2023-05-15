@@ -1,27 +1,64 @@
 .about-company {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    align-items: initial;
+  }
+
+  @media (min-width: 1240px) {
+    justify-content: initial;
+  }
 
   &__text {
-    max-width: 34.563rem;
+    max-width: 100%;
     font-size: 1.25rem;
     font-family: 'TT Interfaces';
     font-weight: 300;
-    margin-top: 3.625rem;
+    margin-top: 1rem;
+
+    @media (min-width: 510px) {
+      max-width: 50%;
+      margin-top: 0;
+    }
+
+    @media (min-width: 768px) {
+      margin-top: 3.625rem;
+      max-width: 34.563rem;
+    }
   }
 
   &__images {
-    position: absolute;
-    right: -18rem;
-    bottom: -5rem;
+    position: relative;
+    margin-left: 1rem;
+    display: none;
+
+    @media (min-width: 510px) {
+      display: block;
+    }
   }
 
   &__image {
-    width: 50%;
+    width: 100%;
+    z-index: 2;
+    position: relative;
+
+    @media (min-width: 768px) {
+      width: 75%;
+    }
 
     &_secondary {
-      width: 25%;
-      position: relative;
+      width: 50%;
+      position: absolute;
       bottom: 4rem;
+      left: 19rem;
+      z-index: 1;
+      display: none;
+
+      @media (min-width: 1240px) {
+        display: block;
+      }
     }
   }
 }

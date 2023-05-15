@@ -2,14 +2,30 @@
   &__header {
     display: flex;
     align-items: center;
+    flex-direction: column;
+
+    @media (min-width: 510px) {
+      flex-direction: row;
+    }
   }
 
   &__text {
-    max-width: 28rem;
+    max-width: initial;
     margin-right: auto;
     font-family: 'TT Interfaces';
     font-weight: 600;
     font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+
+    @media (min-width: 510px) {
+      text-align: left;
+      margin-bottom: 0;
+    }
+
+    @media (min-width: 1240px) {
+      max-width: 28rem;
+    }
 
     &_accented {
       color: #E07153;
@@ -18,13 +34,35 @@
 
   &__images {
     margin-top: 4.25rem;
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      ". . . high"
-      "long long . high"; 
+    display: grid;
+    gap: 0.5rem; 
+    grid-template-columns: 1fr 1fr; 
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: 
+      ". ."
+      "long long"
+      ". .";
+
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr 1fr; 
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: 
+      ". . ."
+      "long long .";
+    }
+    
+    @media (min-width: 1240px) {
+      grid-template-columns: 1fr 1fr 1fr 1fr; 
+      grid-template-rows: 1fr 1fr; 
+      gap: 0.5rem; 
+      grid-template-areas: 
+        ". . . high"
+        "long long . high"; 
+    }
+  }
+
+  &__image {
+    width: 100%;
   }
 
   &__image-4 {
@@ -32,6 +70,11 @@
   }
 
   &__image-6 {
-    grid-area: high;
+    display: none;
+    
+    @media (min-width: 1240px) {
+      display: block;
+      grid-area: high;
+    }
   }
 }
