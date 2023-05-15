@@ -5,9 +5,17 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: 12px;
   font-family: 'TT Interfaces';
   font-style: normal;
   font-weight: 400;
   background: #FBFBFB;
+
+  @media (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media (min-width: 1240px) {
+    font-size: 16px;
+  }
 }

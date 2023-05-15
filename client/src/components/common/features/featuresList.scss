@@ -1,4 +1,14 @@
 .features-list {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+
+  @media (min-width: 425px) {
+    gap: 4rem;
+  }
+
+  @media (min-width: 840px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }

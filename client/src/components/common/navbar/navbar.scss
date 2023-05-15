@@ -1,9 +1,13 @@
 .navbar {
-  display: flex;
+  display: none;
   list-style: none;
   justify-content: space-between;
   width: 32.313rem;
   align-items: center;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
 
   &__link {
     color: #1B1B1B;
