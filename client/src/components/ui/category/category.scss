@@ -1,6 +1,17 @@
 .category {
   display: grid;
-  grid-gap: 0.4rem;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 2.5rem 0 0 1rem;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 2.5rem 0 0 1rem;
+
+  @media (min-width: 435px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: 1080px) {
+    gap: 0.4rem;
+    justify-items: initial;;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
