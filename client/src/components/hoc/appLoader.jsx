@@ -6,6 +6,7 @@ import {
 } from '../../store/products';
 import { useDispatch, useSelector } from 'react-redux';
 import Loader from '../common/loader/loader';
+import { loadFeedbacksList } from '../../store/feedbacks';
 
 const AppLoader = ({ children }) => {
   const dispatch = useDispatch();
@@ -13,6 +14,7 @@ const AppLoader = ({ children }) => {
 
   useEffect(() => {
     dispatch(loadProductsList());
+    dispatch(loadFeedbacksList());
   }, []);
 
   if (productsLoadingStatus) {

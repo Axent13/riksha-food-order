@@ -1,6 +1,12 @@
 .promos {
-  display: grid;
-  grid-gap: 0.4rem;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 2.5rem 0 0 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem 0 0 0;
+  gap: 1rem;
+
+  @media (min-width: 510px) {
+    gap: 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

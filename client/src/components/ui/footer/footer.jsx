@@ -1,11 +1,11 @@
 import React from 'react';
-import Logo from '../../logo';
 
 import facebookIcon from '../../../assets/facebook-icon.png';
 import instagramIcon from '../../../assets/instagram-icon.png';
 import vkIcon from '../../../assets/vk-icon.png';
 
 import './footer.scss';
+import Logo from '../../logo/logo';
 
 const Footer = () => {
   return (

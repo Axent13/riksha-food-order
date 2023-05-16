@@ -32,32 +32,32 @@ const InstagramBlock = () => {
       </div>
       <div className='instagram-block__images'>
         <img
-          className='instagram-block__image-1'
+          className='instagram-block__image instagram-block__image-1'
           src={intagramImage1}
           alt='Фото с Инстаграма'
         />
         <img
-          className='instagram-block__image-2'
+          className='instagram-block__image instagram-block__image-2'
           src={intagramImage2}
           alt='Фото с Инстаграма'
         />
         <img
-          className='instagram-block__image-3'
+          className='instagram-block__image instagram-block__image-3'
           src={intagramImage3}
           alt='Фото с Инстаграма'
         />
         <img
-          className='instagram-block__image-4'
+          className='instagram-block__image instagram-block__image-4'
           src={intagramImage4}
           alt='Фото с Инстаграма'
         />
         <img
-          className='instagram-block__image-5'
+          className='instagram-block__image instagram-block__image-5'
           src={intagramImage5}
           alt='Фото с Инстаграма'
         />
         <img
-          className='instagram-block__image-6'
+          className='instagram-block__image instagram-block__image-6'
           src={intagramImage6}
           alt='Фото с Инстаграма'
         />

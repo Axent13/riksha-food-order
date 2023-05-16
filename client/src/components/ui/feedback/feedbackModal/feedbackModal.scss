@@ -1,0 +1,97 @@
+.feedback-modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  animation: fadeIn 300ms ease both;
+  width: 40rem;
+  background: #FFFFFF;
+  box-shadow: 0px 0.75rem 2rem rgba(0, 0, 0, 0.08);
+  border-radius: 1.5rem;
+  padding: 2rem 2.75rem 2.875rem 2rem;
+
+  &_shown {
+    display: block;
+  }
+
+  &__close-button {
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    width: 1rem;
+    height: 1rem;
+    background: url('../../../../assets/close-button.png') no-repeat center/cover;
+    border: none;
+    cursor: pointer;
+    transition: transform ease 200ms;
+
+    &:hover {
+      transform: scale(1.15);
+    }
+
+    &:active {
+      transform: translateY(0.15rem);
+    }
+  }
+
+  &__title {
+    font-family: 'TT Interfaces';
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #1B1B1B;
+    text-align: center;
+  }
+
+  &__rating {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+  }
+
+  &__rating-title {
+    margin-right: 0.75rem;
+  }
+
+  &__text-area-field {
+    margin-top: 1rem;
+  }
+
+  &__phone-and-name {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1rem;
+  }
+
+  &__button-container {
+    display: flex;
+    justify-content: right;
+  }
+
+  &__button {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    background: url(/assets/fan-bg.svg) center #E07153;
+    font-family: 'TT Interfaces';
+    font-weight: bold;
+    color: white;
+    font-size: 0.875rem;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

@@ -5,8 +5,10 @@ import './phoneNumber.scss';
 const PhoneNumber = () => {
   return (
     <div className='phone-number'>
-      <div>
-        <img src={phoneIcon} alt='Телефон' />
+      <div className='phone-number__icon-and-link'>
+        <a className='phone-number__icon' href='tel:+74956171424'>
+          <img src={phoneIcon} alt='Телефон' />
+        </a>
         <a className='phone-number__link' href='tel:+74956171424'>
           +7 (495) 617-14-24
         </a>
