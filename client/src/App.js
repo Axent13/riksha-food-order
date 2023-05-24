@@ -13,6 +13,7 @@ import EditUserPage from './components/ui/editUserPage/editUserPage';
 import CreateProductPage from './layouts/createProductPage/createProductPage';
 import UserLoader from './components/hoc/userLoader';
 import CartItems from './layouts/cartItems/cartItems';
+import AboutUs from './layouts/aboutUs/aboutUs';
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
               <Route path='login' element={<AuthPage />} />
               <Route path='signUp' element={<RegisterPage />} />
               <Route path='editUserProfile' element={<EditUserPage />} />
+              <Route path='about-us' element={<AboutUs />} />
 
               <Route path='*' element={<Navigate to='/' />} />
             </Routes>
