@@ -1,0 +1,49 @@
+.about-us {
+  &__content {
+    max-width: 77.375rem;
+    padding: 0 1rem;
+    margin: 2.2rem auto 0;
+    font-size: 1.25rem;
+    font-family: 'TT Interfaces';
+    font-weight: 300;
+    margin-top: 1rem;
+  }
+
+  &__main-text {
+    margin-top: 2rem;
+  }
+
+  &__accented-part {
+    margin-top: 2rem;
+    border-left: 0.625rem solid #E07153;
+    padding-left: 0.3rem;
+    line-height: 1.5;
+  }
+
+  &__features-list {
+    margin-top: 1.5rem;
+    padding-left: 2.5rem;
+  }
+
+  &__feature-item {
+    line-height: 1.6;
+  }
+
+  &__link {
+    color: #717171;
+    text-decoration: none;
+
+    &:hover {
+      color: #E07153;
+      text-decoration: underline;
+    }
+  }
+
+  &__footer {
+    margin-top: 5rem;
+
+    @media (min-width: 510px) {
+      margin-top: 8rem;
+    }
+  }
+}
