@@ -4,7 +4,7 @@ import './checkBoxField.scss';
 
 const CheckBoxField = ({ name, value, onChange, children }) => {
   const handleChange = () => {
-    onChange({ name: name, value: !value });
+    onChange({ name, value: !value });
   };
 
   return (
