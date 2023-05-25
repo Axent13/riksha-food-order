@@ -20,16 +20,6 @@ const Navbar = () => {
           Контакты
         </Link>
       </li>
-      <li>
-        <Link className='navbar__link' to='/bonus'>
-          Бонусы
-        </Link>
-      </li>
-      <li>
-        <Link className='navbar__link' to='/vacancy'>
-          Вакансии
-        </Link>
-      </li>
     </ul>
   );
 };
