@@ -5,7 +5,7 @@ import PhoneNumber from '../../common/phoneNumber/phoneNumber';
 import Profile from '../../common/profile/profile';
 import './header.scss';
 import { foodCategoryInfo } from '../../common/foodCategory/foodCategoryInfo';
-import { Link, useNavigate } from 'react-router-dom';
+import { NavLink, Link, useNavigate } from 'react-router-dom';
 import Logo from '../../logo/logo';
 
 const Header = () => {
@@ -51,9 +51,9 @@ const Header = () => {
             )}
           </div>
           <PhoneNumber />
-          <Link to='/cart'>
+          <NavLink to='/cart' className='header__cart'>
             <Cart />
-          </Link>
+          </NavLink>
           <Profile />
         </div>
       </div>
