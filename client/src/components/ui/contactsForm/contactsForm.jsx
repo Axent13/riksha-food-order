@@ -3,6 +3,7 @@ import { validator } from '../../../utils/validator';
 import TextField from '../../common/form/textField';
 import TextAreaField from '../../common/form/textAreaField';
 import './contactsForm.scss';
+import messageService from '../../../services/message.service';
 
 const ContactsForm = () => {
   const initialState = {
@@ -67,7 +68,7 @@ const ContactsForm = () => {
     const isValid = validate();
     if (!isValid) return;
 
-    console.log('sending:', data);
+    messageService.sendMessage({ ...data });
     setData(initialState);
     setSendButtonClicked(false);
   };
