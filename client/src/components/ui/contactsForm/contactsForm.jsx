@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { validator } from '../../../utils/validator';
 import TextField from '../../common/form/textField';
 import TextAreaField from '../../common/form/textAreaField';
 import './contactsForm.scss';
 import messageService from '../../../services/message.service';
 
-const ContactsForm = () => {
+const ContactsForm = ({ onSendFunction }) => {
   const initialState = {
     name: '',
     email: '',
@@ -68,7 +69,8 @@ const ContactsForm = () => {
     const isValid = validate();
     if (!isValid) return;
 
-    messageService.sendMessage({ ...data });
+    await messageService.sendMessage({ ...data });
+    onSendFunction();
     setData(initialState);
     setSendButtonClicked(false);
   };
@@ -105,6 +107,10 @@ const ContactsForm = () => {
       </button>
     </form>
   );
+};
+
+ContactsForm.propTypes = {
+  onSendFunction: PropTypes.func.isRequired,
 };
 
 export default ContactsForm;

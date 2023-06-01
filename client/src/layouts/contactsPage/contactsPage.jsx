@@ -1,13 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './contactsPage.scss';
 import Footer from '../../components/ui/footer/footer';
 import Header from '../../components/ui/header/header';
 import SectionHeader from '../../components/common/sectionHeader/sectionHeader';
 import ContactsForm from '../../components/ui/contactsForm/contactsForm';
+import SuccessToast from '../../components/common/succesToast.jsx/successToast';
 
 const ContactsPage = () => {
+  const [isToastShown, setIsToastShown] = useState(false);
+
+  const handleToastShowing = () => {
+    setIsToastShown(true);
+
+    setTimeout(() => {
+      setIsToastShown(false);
+    }, 4000);
+  };
+
   return (
     <div className='contacts-page'>
+      {isToastShown && <SuccessToast isShown={isToastShown} />}
       <Header />
       <div className='contacts-page__content'>
         <SectionHeader text='Связаться с нами' />
@@ -28,7 +40,7 @@ const ContactsPage = () => {
           <p className='contacts-page__work-time'>c 11:00 до 23:00</p>
         </div>
         <div className='contacts-page__form'>
-          <ContactsForm />
+          <ContactsForm onSendFunction={handleToastShowing} />
         </div>
       </div>
       <div className='contacts-page__footer'>
