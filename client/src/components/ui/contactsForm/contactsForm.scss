@@ -1,0 +1,20 @@
+.contacts-form {
+  
+  &__button {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    background: url(/assets/fan-bg.svg) center #E07153;
+    font-family: 'TT Interfaces';
+    font-weight: bold;
+    color: white;
+    font-size: 0.875rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}

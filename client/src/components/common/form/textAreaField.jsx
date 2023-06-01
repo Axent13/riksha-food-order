@@ -2,7 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './textAreaField.scss';
 
-const TextAreaField = ({ name, value, onChange, error, placeholder }) => {
+const TextAreaField = ({
+  name,
+  value,
+  onChange,
+  error,
+  placeholder,
+  label,
+}) => {
   const handleChange = ({ target }) => {
     onChange({ name: target.name, value: target.value });
   };
@@ -13,6 +20,9 @@ const TextAreaField = ({ name, value, onChange, error, placeholder }) => {
 
   return (
     <div>
+      <label className='text-field__label' htmlFor={name}>
+        {label}
+      </label>
       <textarea
         id={name}
         name={name}

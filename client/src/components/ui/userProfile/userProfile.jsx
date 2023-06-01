@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import {
   getCurrentUserData,
   getDataStatus,
-  getIsLoggedIn,
   logOut,
 } from '../../../store/users';
 import Loader from '../../common/loader/loader';
@@ -17,7 +16,6 @@ const UserProfile = () => {
     image: null,
   });
 
-  const isLoggedIn = useSelector(getIsLoggedIn());
   const dataStatus = useSelector(getDataStatus());
 
   const [isLoading, setIsLoading] = useState(true);

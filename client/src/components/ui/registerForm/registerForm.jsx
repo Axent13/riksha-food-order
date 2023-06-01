@@ -5,7 +5,6 @@ import { useDispatch } from 'react-redux';
 import { signUp } from '../../../store/users';
 import { Link } from 'react-router-dom';
 import './registerForm.scss';
-import CheckBoxField from '../../common/form/checkBoxField';
 
 const RegisterForm = () => {
   const dispatch = useDispatch();

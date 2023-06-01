@@ -11,23 +11,13 @@ const Navbar = () => {
         </Link>
       </li>
       <li>
-        <Link className='navbar__link' to='/delivery'>
+        <Link className='navbar__link' to='/delivery-and-payment'>
           Доставка и оплата
         </Link>
       </li>
       <li>
         <Link className='navbar__link' to='/contacts'>
           Контакты
-        </Link>
-      </li>
-      <li>
-        <Link className='navbar__link' to='/bonus'>
-          Бонусы
-        </Link>
-      </li>
-      <li>
-        <Link className='navbar__link' to='/vacancy'>
-          Вакансии
         </Link>
       </li>
     </ul>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 import facebookIcon from '../../../assets/facebook-icon.png';
 import instagramIcon from '../../../assets/instagram-icon.png';
@@ -17,19 +18,19 @@ const Footer = () => {
         <div className='footer__links-and-socials'>
           <ul className='footer__links'>
             <li className='footer__link-container'>
-              <a href='mock/change/me' className='footer__link'>
+              <NavLink to='/about-us' className='footer__link'>
                 О нас
-              </a>
+              </NavLink>
             </li>
             <li className='footer__link-container'>
-              <a href='mock/change/me' className='footer__link'>
+              <NavLink to='/delivery-and-payment' className='footer__link'>
                 Доставка и оплата
-              </a>
+              </NavLink>
             </li>
             <li className='footer__link-container'>
-              <a href='mock/change/me' className='footer__link'>
+              <NavLink to='/contacts' className='footer__link'>
                 Контакты
-              </a>
+              </NavLink>
             </li>
           </ul>
           <ul className='footer__socials'>

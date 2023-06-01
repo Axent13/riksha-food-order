@@ -13,6 +13,9 @@ import EditUserPage from './components/ui/editUserPage/editUserPage';
 import CreateProductPage from './layouts/createProductPage/createProductPage';
 import UserLoader from './components/hoc/userLoader';
 import CartItems from './layouts/cartItems/cartItems';
+import AboutUs from './layouts/aboutUs/aboutUs';
+import DeliveryAndPayment from './layouts/deliveryAndPayment/deliveryAndPayment';
+import ContactsPage from './layouts/contactsPage/contactsPage';
 
 const App = () => {
   return (
@@ -29,6 +32,12 @@ const App = () => {
               <Route path='login' element={<AuthPage />} />
               <Route path='signUp' element={<RegisterPage />} />
               <Route path='editUserProfile' element={<EditUserPage />} />
+              <Route path='about-us' element={<AboutUs />} />
+              <Route path='contacts' element={<ContactsPage />} />
+              <Route
+                path='delivery-and-payment'
+                element={<DeliveryAndPayment />}
+              />
 
               <Route path='*' element={<Navigate to='/' />} />
             </Routes>
