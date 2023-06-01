@@ -26,7 +26,14 @@
     font-size: 1rem;
 
     &_invalid {
-      border: 2px solid red;
+      border: 2px solid #fc7f7f;
     }
+  }
+
+  &__error {
+    font-family: 'TT Interfaces';
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #fc7f7f;
   }
 }

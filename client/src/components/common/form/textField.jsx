@@ -34,7 +34,7 @@ const TextField = ({
           className={getInputClasses()}
           placeholder={placeholder}
         />
-        {error && <div className='invalid-feedback '>{error}</div>}
+        {error && <div className='text-field__error'>{error}</div>}
       </div>
     </div>
   );
