@@ -7,7 +7,7 @@
   &__card {
     padding: 2.5rem;
     width: 30rem;
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 0px 0.75rem 2rem rgba(0, 0, 0, 0.08);
     border-radius: 1.5rem;
     display: flex;
@@ -18,7 +18,7 @@
     font-family: 'TT Interfaces';
     font-size: 1.25rem;
     font-weight: 600;
-    color: #1B1B1B;
+    color: #1b1b1b;
     text-align: center;
     margin-bottom: 1rem;
   }
@@ -27,7 +27,7 @@
     font-family: 'TT Interfaces';
     font-size: 1rem;
     font-weight: normal;
-    color: #1B1B1B;
+    color: #1b1b1b;
   }
 
   &__item {
@@ -35,19 +35,19 @@
     justify-content: space-between;
     margin-top: 2rem;
   }
-  
+
   &__title {
     font-family: 'TT Interfaces';
     font-size: 1.1rem;
     font-weight: 600;
-    color: #1B1B1B;
+    color: #1b1b1b;
   }
 
   &__content {
     font-family: 'TT Interfaces';
     font-size: 1rem;
     font-weight: normal;
-    color: #1B1B1B;
+    color: #1b1b1b;
 
     &_right {
       text-align: right;
@@ -63,7 +63,7 @@
     width: 100%;
     padding: 0.8rem;
     border: none;
-    background: url(/assets/fan-bg.svg) center #E07153;
+    background: url(assets/fan-bg.svg) center #e07153;
     font-family: 'TT Interfaces';
     font-weight: bold;
     color: white;
