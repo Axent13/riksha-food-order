@@ -1,7 +1,7 @@
 .register-form {
   padding: 2.5rem;
   width: 30rem;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 0.75rem 2rem rgba(0, 0, 0, 0.08);
   border-radius: 1.5rem;
   display: flex;
@@ -11,7 +11,7 @@
     font-family: 'TT Interfaces';
     font-size: 1.25rem;
     font-weight: 600;
-    color: #1B1B1B;
+    color: #1b1b1b;
     margin-bottom: 1rem;
     text-align: center;
   }
@@ -20,7 +20,7 @@
     width: 100%;
     padding: 0.8rem;
     border: none;
-    background: url(/assets/fan-bg.svg) center #E07153;
+    background: url(assets/fan-bg.svg) center #e07153;
     font-family: 'TT Interfaces';
     font-weight: bold;
     color: white;
@@ -40,7 +40,7 @@
     font-size: 1rem;
     font-weight: 600;
     text-decoration: none;
-    color: #E07153;
+    color: #e07153;
 
     &:hover {
       color: #d4ad8c;

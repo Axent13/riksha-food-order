@@ -1,3 +1,8 @@
+$slick-font-path: '~slick-carousel/slick/fonts/';
+$slick-loader-path: '~slick-carousel/slick/';
+
+@import '~slick-carousel/slick/slick', '~slick-carousel/slick/slick-theme';
+
 .promo-slider {
   position: relative;
   min-height: 33rem;
@@ -17,7 +22,7 @@
   &__text-accented {
     font-weight: bold;
     font-size: 2.5rem;
-    color: #E07153;
+    color: #e07153;
   }
 
   &__text-addition {
@@ -36,7 +41,7 @@
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
-    background: url('/assets/right-button-arrow.png') center no-repeat white;
+    background: url('assets/right-button-arrow.png') center no-repeat white;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
     position: absolute;
     right: -2.5rem;
@@ -53,7 +58,5 @@
     &:hover {
       opacity: 0.8;
     }
-
-    
   }
 }
